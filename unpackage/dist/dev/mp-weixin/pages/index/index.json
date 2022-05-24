@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "q-layout": "/Q-UI/Q-layout/Q-layout",
+    "home": "/components/Home/Home",
+    "discover": "/components/discover/discover",
+    "cart-list": "/components/cart-list/cart-list",
+    "my-nav": "/pages/index/components/nav",
+    "mytab-bar": "/pages/index/components/tabBar"
+  }
+}

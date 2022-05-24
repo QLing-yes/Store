@@ -1,0 +1,1 @@
+<view class="content data-v-073adf44"><view class="tabs data-v-073adf44" style="flex-direction:row;"><slot name="left"></slot></view><slot></slot><view class="tabs data-v-073adf44" style="flex-direction:row-reverse;"><slot name="right"></slot></view></view>

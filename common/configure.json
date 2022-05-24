@@ -1,0 +1,33 @@
+{
+	"tabBar": [{
+			"pagePath": "pages/Home/Home",
+			"iconPath": "\ue606",
+			"selectedIconPath": "\ue602",
+			"text": "Home"
+		},
+		{
+			"pagePath": "pages/Search/Search",
+			"iconPath": "\ue603",
+			"selectedIconPath": "\ue600",
+			"text": "Search"
+		},
+		{
+			"pagePath": "pages/Chat/Chat",
+			"iconPath": "\ue605",
+			"selectedIconPath": "\ue605",
+			"text": "Chat"
+		},
+		{
+			"pagePath": "pages/Bag/Bag",
+			"iconPath": "\ue604",
+			"selectedIconPath": "\ue604",
+			"text": "Bag"
+		},
+		{
+			"pagePath": "pages/Profile/Profile",
+			"iconPath": "\ue601",
+			"selectedIconPath": "\ue601",
+			"text": "Profile"
+		}
+	]
+}

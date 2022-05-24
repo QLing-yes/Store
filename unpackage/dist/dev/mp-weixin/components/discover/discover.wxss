@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+._header {
+  display: flex;
+}
+.sticky {
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  z-index: 99;
+}
+.flex {
+  display: flex;
+}
+.t {
+  font-weight: 600;
+  font-size: 35rpx;
+  margin: 30rpx;
+  margin-left: 0rpx;
+}
+.list {
+  margin: 30rpx;
+  margin-top: 0rpx;
+  display: flex;
+  flex-direction: column;
+}
+.discover {
+  height: 102rpx;
+  border-radius: 52rpx;
+  flex-direction: row;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #f54ea2, #ff7676);
+}
+.discover .icon {
+  color: #ffffff;
+  font-size: 40rpx;
+  margin-left: 52rpx;
+}
+.discover .input {
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 20rpx;
+  flex: 1;
+  margin-right: 52rpx;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90rpx;
+  position: relative;
+}
+.category > .line {
+  position: absolute;
+  width: 50rpx;
+  height: 10rpx;
+  bottom: 10rpx;
+  border-radius: 10rpx;
+  background-color: #fa618d;
+}
+.category > .label {
+  color: #fa608f;
+}
+

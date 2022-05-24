@@ -1,0 +1,201 @@
+
+view,
+label,
+swiper-item,
+scroll-view {
+  display:flex;
+  flex-direction:column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  align-items: stretch;
+  align-content: flex-start;
+}
+view,
+image,
+input,
+scroll-view,
+swiper,
+swiper-item,
+text,
+textarea,
+video {
+  position: relative;
+  border: 0px solid #000000;
+  box-sizing: border-box;
+}
+swiper-item {
+  position: absolute;
+}
+button {
+  margin: 0;
+}
+
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.list {
+  transition: margin-top 0.5s;
+  flex: 1;
+  border-top-left-radius: 52rpx;
+  border-top-right-radius: 52rpx;
+  background-color: #ffffff;
+}
+.header {
+  flex-direction: row;
+  height: 110rpx;
+}
+.header .icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  line-height: 80rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  background-color: #d61c64;
+}
+.header > .header-L {
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.header > .header-C {
+  line-height: 110rpx;
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 36rpx;
+  text-align: center;
+}
+.header > .header-R {
+  flex-direction: row-reverse;
+  flex: 1;
+  align-items: center;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.img {
+  width: 750rpx;
+  position: fixed;
+  max-height: 99vh;
+}
+.details {
+  flex: 1;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-top-left-radius: 52rpx;
+  border-top-right-radius: 52rpx;
+  padding-top: 52rpx;
+  background-color: #ffffff;
+}
+.details > .item1 {
+  color: #8a8a8a;
+  font-size: 30rpx;
+}
+.details > .item2 {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.details > .item2 > .t1 {
+  font-weight: 600;
+  font-size: 50rpx;
+}
+.details > .item2 > .t2 {
+  font-weight: 600;
+  font-size: 30rpx;
+  border-radius: 16rpx;
+  margin-top: 25rpx;
+  padding: 20rpx;
+  color: #ffffff;
+  background-image: linear-gradient(to bottom, #f54ea2, #ff7676);
+}
+.details > .icon {
+  margin-bottom: 30rpx;
+  font-size: 32rpx;
+  color: #ffba38;
+  margin-top: 20rpx;
+  margin-top: 20rpx;
+}
+.details > .price {
+  color: #8a8a8a;
+  margin-bottom: 25rpx;
+}
+.details > .brief {
+  flex: 1;
+}
+.details > .brief > .title {
+  font-weight: 600;
+  font-size: 35rpx;
+  margin-bottom: 25rpx;
+}
+.details > .brief > .content {
+  color: #8a8a8a;
+  font-size: 32rpx;
+  flex-wrap: wrap;
+  text-overflow: ellipsis;
+  lines: 0;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.details > .brief > .isOmit {
+  lines: 5;
+  -webkit-line-clamp: 2;
+}
+.footer {
+  background-color: #ffffff;
+  padding: 30rpx;
+  flex-direction: row-reverse;
+}
+.footer > .button {
+  flex-direction: row-reverse;
+  background-color: #cf1669;
+  width: 400rpx;
+  background-image: linear-gradient(to bottom, #f54ea2, #ff7676);
+  border-radius: 30rpx;
+  padding-left: 30rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer > .button .icon {
+  color: #ffffff;
+  background-color: #f783ac;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  line-height: 80rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer > .button > .Wire {
+  background-color: #ffffff;
+  width: 2rpx;
+  height: 45rpx;
+}
+.footer > .button > .txt {
+  font-size: 30rpx;
+  color: #ffffff;
+}
+

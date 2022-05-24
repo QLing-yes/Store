@@ -1,0 +1,110 @@
+<template>
+	<Q-layout class="bj">
+		<template v-slot:header>
+			<navigation class="nav">
+				<template v-slot:left>
+					<Q-icon class="tab"><text class="icon" @click="navBack()">&#xe60c;</text></Q-icon>
+				</template>
+				<text class="title">Cart</text>
+			</navigation>
+		</template>
+		
+		<list class="list" show-scrollbar="false">
+			<cell v-for="s in 6">
+				<card-2></card-2>
+			</cell>
+		</list>
+		
+		<template v-slot:footer>
+			<view class="footer">
+				<view class="Total">
+					<text class="t">Total (3)</text>
+					<text class="t">$491</text>
+				</view>
+				<view class="button">
+					<Q-icon class="icon"><text class="icon">&#xe60d;</text></Q-icon>
+					<view class="Wire"></view>
+					<text class="txt">Settlement</text>
+					<Q-icon class="icon"><text class="icon">&#xe610;</text></Q-icon>
+				</view>
+			</view>
+		</template>
+	</Q-layout>
+</template>
+
+<script>
+export default {
+	data() {
+		return {};
+	},
+	mounted() {},
+	methods: {
+		navBack() {
+			uni.navigateBack({ delta: 1 });
+		}
+	},
+	computed: {}
+};
+</script>
+
+<style lang="scss">
+.list {
+	flex: 1;
+	margin: $Margins + $tabs-padding;
+}
+.bj {
+	background-color: $bj;
+	.nav{
+		background-color: $bj;
+	}
+}
+.tab {
+	@include tab;
+	text-align: center;
+	color: aliceblue;
+	background-color: #ffffff;
+	color: #000000;
+}
+.title {
+	@include title-text;
+}
+.footer {
+	background-color: #ffffff;
+	padding: 30rpx;
+	padding-top: 0rpx;
+	& > .Total {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 20rpx;
+		padding-left: 30rpx;
+		padding-right: 30rpx;
+		.t {
+			font-weight: 600;
+			font-size: 35rpx;
+		}
+	}
+	& > .button {
+		flex-direction: row-reverse;
+		background-color: #cf1669;
+		background-image: linear-gradient(to bottom, #f54ea2, #ff7676);
+		border-radius: 30rpx;
+		padding-left: 30rpx;
+		justify-content: space-between;
+		align-items: center;
+		& .icon {
+			color: #ffffff;
+			background-color: #f783ac;
+			@include tab;
+		}
+		& > .Wire {
+			background-color: #ffffff;
+			width: 2rpx;
+			height: 45rpx;
+		}
+		& > .txt {
+			font-size: 30rpx;
+			color: #ffffff;
+		}
+	}
+}
+</style>

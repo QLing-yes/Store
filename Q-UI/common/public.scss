@@ -1,0 +1,24 @@
+//#ifndef APP-PLUS
+// uni-page-body {}
+// uni-view,
+// view,
+// header {
+// 	display: flex;
+// }
+header{
+	display: flex;
+}
+// #endif
+.sticky {
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	position: sticky !important;
+	//#ifndef APP-PLUS
+	z-index: 99;
+	//#endif
+}
+.flex {
+	display: flex;
+}

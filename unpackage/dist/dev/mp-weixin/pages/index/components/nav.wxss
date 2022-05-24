@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.navigation > view :nth-of-type(1) {
+  flex-direction: row;
+}
+.title {
+  font-weight: 600;
+  font-size: 36rpx;
+  text-align: center;
+}
+.tab {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  line-height: 80rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

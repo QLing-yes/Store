@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.tabd.data-v-1fd32b1e {
+  width: 60rpx;
+  height: 60rpx;
+  justify-content: center;
+  align-items: center;
+}
+.default.data-v-1fd32b1e {
+  font-size: 25rpx;
+  border-radius: 25rpx;
+  background-color: #eb5a80;
+  color: aliceblue;
+  padding-left: 7rpx;
+  padding-right: 7rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+}
+

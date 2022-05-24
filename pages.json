@@ -1,0 +1,56 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					"disableScroll": true
+				}
+			}
+		},
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"app-plus": {
+					"disableScroll": true
+				}
+			}
+		},
+		{
+			"path": "pages/details/details",
+			"style": {
+				"enablePullDownRefresh": true,
+				"h5": {
+					"pullToRefresh": {
+						// "support": true,
+						"offset": "-9999px"
+					}
+				},
+				"app-plus": {
+					"disableScroll": true,
+					"pullToRefresh": {
+						// "support": true,
+						"offset": "-9999px"
+					}
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		//导航栏
+		"navigationStyle": "custom",
+		//屏幕方向
+		"pageOrientation": "portrait"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// "myp-icon": "@/custom/myp-icon/myp-icon.vue", // 允许覆盖某个组件，比如 myp-icon
+			"Q-(.*)": "@/Q-UI/Q-$1/Q-$1.vue" // 匹配mypUI内的vue文件
+		}
+	}
+}

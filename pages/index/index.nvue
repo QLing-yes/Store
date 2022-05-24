@@ -1,0 +1,83 @@
+<template>
+	<Q-layout class="Qlayout" :css="Qlayout">
+		<template v-slot:header>
+			<myNav></myNav>
+		</template>
+
+		<view class="swiper">
+			<view class="swiper_item" :style="swiperItem"><Home></Home></view>
+			<view class="swiper_item" :style="swiperItem"><discover></discover></view>
+			<view class="swiper_item" :style="swiperItem"></view>
+			<view class="swiper_item" :style="swiperItem"><cart-list></cart-list></view>
+		</view>
+
+		<template v-slot:footer>
+			<mytabBar @current="current = $event"></mytabBar>
+		</template>
+	</Q-layout>
+</template>
+
+<script>
+import { tabBar } from '@/common/configure.json';
+import myNav from './components/nav.vue';
+import mytabBar from './components/tabBar.vue';
+export default {
+	components: { myNav, mytabBar },
+	mixins: [],
+	data() {
+		return {
+			current: 1,
+			Page: tabBar
+		};
+	},
+	onLoad() {},
+	onReady() {},
+	methods: {
+		nav() {
+			uni.navigateTo({
+				url: '../../pages/cart/cart'
+			});
+		}
+	},
+	computed: {
+		swiperItem() {
+			//#ifdef H5
+			return `width: 100vw;transform: translateX(-${100 * this.current}vw);`;
+			//#endif
+			//#ifndef H5
+			return `width: 750rpx;transform: translateX(-${750 * this.current}rpx);`;
+			//#endif
+		},
+		Qlayout() {
+			//#ifdef MP
+			return 'height: 100vh;background-color: #eeeff4;';
+			//#endif
+		}
+	}
+};
+</script>
+
+<style lang="scss" scoped>
+.Qlayout {
+	background-color: #eeeff4;
+	//#ifndef APP-PLUS
+	height: 100vh;
+	//#endif
+}
+.swiper {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	//#ifndef APP-PLUS
+	overflow-y: scroll;
+	overflow-x: hidden;
+	//#endif
+}
+.swiper_item {
+	display: flex;
+	flex-direction: column;
+	//#ifndef APP-PLUS
+	overflow-y: scroll;
+	//#endif
+}
+</style>

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.bj {
+  background-color: #eeeff4;
+}
+.list {
+  flex: 1;
+  overflow: auto;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.padd {
+  padding-bottom: 30rpx;
+}
+.footer {
+  background-color: #ffffff;
+  padding: 20rpx;
+  border-top-left-radius: 32rpx;
+  border-top-right-radius: 32rpx;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer > .button {
+  flex-direction: row-reverse;
+  background-color: #cf1669;
+  background-image: linear-gradient(to bottom, #f54ea2, #ff7676);
+  border-radius: 30rpx;
+  padding-left: 30rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer > .button .icon {
+  color: #ffffff;
+  background-color: #f783ac;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  line-height: 80rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rpx;
+  height: 80rpx;
+  margin: 10rpx;
+  line-height: 80rpx;
+}
+.footer > .button > .txt {
+  font-size: 30rpx;
+  color: #ffffff;
+}
+.jg {
+  font-weight: 600;
+  color: #ff0000;
+}
+

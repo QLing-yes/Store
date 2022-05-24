@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.card {
+  height: 672rpx;
+  width: 372rpx;
+  margin-top: 50rpx;
+  margin-right: 20rpx;
+  margin-left: 35rpx;
+  display: inline-block;
+  will-change: opacity;
+  content-visibility: auto;
+}
+.flex {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 672rpx;
+}
+.top {
+  top: 200rpx;
+  height: 336rpx;
+}
+.top > .img {
+  width: 372rpx;
+  margin-top: -150rpx;
+}
+.top > .film {
+  width: 372rpx;
+  margin-top: -100rpx;
+}
+.bottom {
+  height: 536rpx;
+  border-radius: 30rpx;
+  background-color: #ffffff;
+  padding-left: 20rpx;
+}
+.bottom .text {
+  font-weight: 600;
+}
+.bottom > .t1 {
+  margin-top: 220rpx;
+  margin-bottom: 30rpx;
+  border-radius: 16rpx;
+  height: 60rpx;
+  width: 140rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(to bottom, #f54ea2, #ff7676);
+}
+.bottom > .t2 {
+  flex: 1;
+  font-size: 40rpx;
+}
+.bottom > .icon {
+  flex: 1;
+  color: #ffba38;
+  font-size: 22rpx;
+  margin-left: 0;
+}
+.bottom > .t3 {
+  flex: 1;
+  font-size: 30rpx;
+  margin-left: 0;
+}
+.bottom > .price {
+  flex: 1;
+  color: #8a8a8a;
+}
+

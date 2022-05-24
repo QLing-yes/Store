@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "q-layout": "/Q-UI/Q-layout/Q-layout",
+    "navigation": "/components/navigation/navigation",
+    "q-icon": "/Q-UI/Q-icon/Q-icon",
+    "card-2": "/components/card-2/card-2"
+  }
+}

@@ -1,0 +1,125 @@
+
+view,
+label,
+swiper-item,
+scroll-view {
+  display:flex;
+  flex-direction:column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  align-items: stretch;
+  align-content: flex-start;
+}
+view,
+image,
+input,
+scroll-view,
+swiper,
+swiper-item,
+text,
+textarea,
+video {
+  position: relative;
+  border: 0px solid #000000;
+  box-sizing: border-box;
+}
+swiper-item {
+  position: absolute;
+}
+button {
+  margin: 0;
+}
+
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.list {
+  flex: 1;
+  margin: 30rpx;
+}
+.bj {
+  background-color: #eeeff4;
+}
+.bj .nav {
+  background-color: #eeeff4;
+}
+.tab {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  line-height: 80rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  background-color: #ffffff;
+  color: #000000;
+}
+.title {
+  font-weight: 600;
+  font-size: 36rpx;
+  text-align: center;
+}
+.footer {
+  background-color: #ffffff;
+  padding: 30rpx;
+  padding-top: 0rpx;
+}
+.footer > .Total {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.footer > .Total .t {
+  font-weight: 600;
+  font-size: 35rpx;
+}
+.footer > .button {
+  flex-direction: row-reverse;
+  background-color: #cf1669;
+  background-image: linear-gradient(to bottom, #f54ea2, #ff7676);
+  border-radius: 30rpx;
+  padding-left: 30rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer > .button .icon {
+  color: #ffffff;
+  background-color: #f783ac;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  line-height: 80rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer > .button > .Wire {
+  background-color: #ffffff;
+  width: 2rpx;
+  height: 45rpx;
+}
+.footer > .button > .txt {
+  font-size: 30rpx;
+  color: #ffffff;
+}
+

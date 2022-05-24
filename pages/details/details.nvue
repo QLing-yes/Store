@@ -1,0 +1,244 @@
+<template>
+	<view>
+		<image class="img" src="../../static/card/y10.png" mode="widthFix"></image>
+		<Q-layout :statusbar="exhibit != 0">
+			<template v-slot:header>
+				<view class="header" v-if="exhibit != 0">
+					<view class="header-L" @click="navBack()">
+						<text class="icon">&#xe60c;</text>
+						<!-- #ifdef MP -->
+						<text class="icon">&#xe60e;</text>
+						<!-- #endif -->
+					</view>
+					<text class="header-C">Cart</text>
+					<view class="header-R">
+						<!-- #ifndef MP -->
+						<text class="icon">&#xe60e;</text>
+						<!-- #endif -->
+					</view>
+				</view>
+			</template>
+
+			<list class="list" :style="'margin-top:' + pageH * exhibit + 'px;'">
+				<cell>
+					<view class="details">
+						<text class="item1">Solid Male | {{ exhibit }}</text>
+
+						<view class="item2">
+							<text class="t1">Moonstar</text>
+							<text class="t2">3 Month</text>
+						</view>
+
+						<text class="icon">&#xe60b;&#xe60b;&#xe60b;&#xe60b;&#xe60b;</text>
+
+						<text class="price">$491</text>
+
+						<view class="brief">
+							<text class="title">Description</text>
+
+							<text :class="'content ' + (exhibit == 0 ? '' : 'isOmit')">
+								下拉收起;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl quam vulputate enim ultricies maecenas sed. Sed in netus venenatis suspendisse tincidunt in
+								metuslectus. Phasellus feugiat quam lorem non morbi laoreet ut ut ac. Platea vivamus elementum sed aliquam, pulvinar est consectetur sollicitudin praesent.
+								Pellentesqueviverra dui Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl quam vulputate enim ultricies maecenas sed. Sed in netus venenatis suspendisse
+								Sed in netus venenatis suspendisse tincidunt in metuslectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl quam vulputate enim ultricies maecenas
+								sed. Sed in netus venenatis suspendisse tincidunt in metuslectus. Phasellus feugiat quam lorem non morbi laoreet ut ut ac. Platea vivamus elementum sed aliquam,
+								pulvinar est consectetur sollicitudin praesent. Pellentesqueviverra dui Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl quam vulputate enim ultricies
+								maecenas sed. Sed in netus venenatis suspendisse Sed in netus venenatis suspendisse tincidunt in metuslectus. Lorem ipsum dolor sit amet, consectetur adipiscing
+								elit. Nisl quam vulputate enim ultricies maecenas sed. Sed in netus venenatis suspendisse tincidunt in metuslectus. Phasellus feugiat quam lorem non morbi laoreet
+								ut ut ac. Platea vivamus elementum sed aliquam, pulvinar est consectetur sollicitudin praesent. Pellentesqueviverra dui Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Nisl quam vulputate enim ultricies maecenas sed. Sed in netus venenatis suspendisse Sed in netus venenatis suspendisse tincidunt in metuslectus.
+								end
+							</text>
+						</view>
+						<text @click="exhibit = exhibit == 0 ? 0.35 : 0" style="color: #CF1669;font-size: 32rpx;font-weight: 500;">{{ exhibit != 0 ? '展开' : '收起' }}</text>
+					</view>
+				</cell>
+			</list>
+
+			<template v-slot:footer>
+				<view class="footer">
+					<view class="button">
+						<Q-icon class="icon" n="3"><text class="icon">&#xe60f;</text></Q-icon>
+						<view class="Wire"></view>
+						<text class="txt">Add to Cart</text>
+					</view>
+				</view>
+			</template>
+		</Q-layout>
+	</view>
+</template>
+
+<script>
+export default {
+	data() {
+		return {
+			exhibit: 0.35,
+			pageH: uni.getSystemInfoSync().windowHeight - uni.getSystemInfoSync().statusBarHeight
+		};
+	},
+	onPullDownRefresh(e) {
+		uni.stopPullDownRefresh();
+		this.exhibit = 0.35;
+	},
+	mounted() {},
+	methods: {
+		navBack() {
+			uni.navigateBack({ delta: 1 });
+		}
+	},
+	computed: {}
+};
+</script>
+
+<style lang="scss">
+.list {
+	// transition-property: width, height, top, bottom, margin-top;
+	// transition-duration: 0.5s;
+	transition: margin-top 0.5s;
+	flex: 1;
+	border-top-left-radius: 52rpx;
+	border-top-right-radius: 52rpx;
+	background-color: #ffffff;
+}
+.header {
+	flex-direction: row;
+	height: $header-Height;
+	// background-color: antiquewhite;
+	.icon {
+		@include tab;
+		text-align: center;
+		color: aliceblue;
+		background-color: #d61c64;
+	}
+	& > .header-L {
+		flex-direction: row;
+
+		flex: 1;
+		align-items: center;
+		padding-left: $tabs-padding;
+		padding-right: $tabs-padding;
+	}
+	& > .header-C {
+		line-height: $header-Height;
+		color: aliceblue;
+		@include title-text;
+	}
+	& > .header-R {
+		flex-direction: row-reverse;
+
+		flex: 1;
+		align-items: center;
+		padding-left: $tabs-padding;
+		padding-right: $tabs-padding;
+	}
+}
+.img {
+	width: 750rpx;
+	//#ifdef APP-PLUS
+	position: absolute;
+	//#endif
+	//#ifndef APP-PLUS
+	position: fixed;
+	max-height: 99vh;
+	//#endif
+}
+.details {
+	flex: 1;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	border-top-left-radius: 52rpx;
+	border-top-right-radius: 52rpx;
+	padding-top: 52rpx;
+	background-color: #ffffff;
+	& > .item1 {
+		color: $grey;
+		font-size: 30rpx;
+	}
+	& > .item2 {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+		& > .t1 {
+			font-weight: 600;
+			font-size: 50rpx;
+		}
+		& > .t2 {
+			font-weight: 600;
+			font-size: 30rpx;
+			border-radius: 16rpx;
+			margin-top: 25rpx;
+			padding: 20rpx;
+			color: #ffffff;
+			background-image: linear-gradient(to bottom, #f54ea2, #ff7676);
+		}
+	}
+	& > .icon {
+		margin-bottom: 30rpx;
+		font-size: 32rpx;
+		color: $star;
+		margin-top: 20rpx;
+		margin-top: 20rpx;
+		// background-color: #cf1669;
+	}
+	& > .price {
+		color: $grey;
+		margin-bottom: 25rpx;
+	}
+	& > .brief {
+		flex: 1;
+		& > .title {
+			font-weight: 600;
+			font-size: 35rpx;
+			margin-bottom: 25rpx;
+		}
+		& > .content {
+			color: $grey;
+			font-size: 32rpx;
+			flex-wrap: wrap;
+			text-overflow: ellipsis;
+			lines: 0;
+			//#ifndef APP-PLUS
+			word-wrap: break-word;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			//#endif
+		}
+		& > .isOmit {
+			lines: 5;
+			//#ifndef APP-PLUS
+			-webkit-line-clamp: 2;
+			//#endif
+		}
+	}
+}
+.footer {
+	background-color: #ffffff;
+	padding: 30rpx;
+	flex-direction: row-reverse;
+	& > .button {
+		flex-direction: row-reverse;
+		background-color: #cf1669;
+		width: 400rpx;
+		background-image: linear-gradient(to bottom, #f54ea2, #ff7676);
+		border-radius: 30rpx;
+		padding-left: 30rpx;
+		justify-content: space-between;
+		align-items: center;
+		& .icon {
+			color: #ffffff;
+			background-color: #f783ac;
+			@include tab;
+		}
+		& > .Wire {
+			background-color: #ffffff;
+			width: 2rpx;
+			height: 45rpx;
+		}
+		& > .txt {
+			font-size: 30rpx;
+			color: #ffffff;
+		}
+	}
+}
+</style>

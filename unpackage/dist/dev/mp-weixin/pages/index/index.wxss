@@ -1,0 +1,64 @@
+
+view,
+label,
+swiper-item,
+scroll-view {
+  display:flex;
+  flex-direction:column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  align-items: stretch;
+  align-content: flex-start;
+}
+view,
+image,
+input,
+scroll-view,
+swiper,
+swiper-item,
+text,
+textarea,
+video {
+  position: relative;
+  border: 0px solid #000000;
+  box-sizing: border-box;
+}
+swiper-item {
+  position: absolute;
+}
+button {
+  margin: 0;
+}
+
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.Qlayout.data-v-8ddf7c9c {
+  background-color: #eeeff4;
+  height: 100vh;
+}
+.swiper.data-v-8ddf7c9c {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.swiper_item.data-v-8ddf7c9c {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
