@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.card {
+  background-color: #ffffff;
+  flex-direction: row;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  align-items: center;
+}
+.card > .img {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+  background-color: #dcd6db;
+}
+.card > .content {
+  flex: 1;
+  height: 160rpx;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  justify-content: space-around;
+}
+.card > .content .title {
+  font-weight: 600;
+  color: #f06595;
+}
+.card > .content .new {
+  padding-right: 60rpx;
+  color: #f06595;
+  font-weight: 600;
+  font-size: 35rpx;
+}
+.card > .content .old {
+  color: #c5c5c5;
+  font-weight: 600;
+  font-size: 35rpx;
+  text-decoration: line-through;
+}
+.card > .tab {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  line-height: 80rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rpx;
+  font-size: 38rpx;
+  background-color: #f06595;
+  color: #ffffff;
+}
+

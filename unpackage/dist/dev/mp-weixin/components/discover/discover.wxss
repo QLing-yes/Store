@@ -1,3 +1,31 @@
+@charset "UTF-8"
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+
 @charset "UTF-8";
 /* 颜色变量 */
 /* 行为相关颜色 */
@@ -33,13 +61,24 @@
   margin: 30rpx;
   margin-left: 0rpx;
 }
+.t_margin {
+  margin: 30rpx;
+  margin-left: 0rpx;
+}
 .list {
   margin: 30rpx;
   margin-top: 0rpx;
   display: flex;
   flex-direction: column;
 }
+.card4 {
+  margin-bottom: 16rpx;
+}
+.card4 > view {
+  margin-bottom: 16rpx;
+}
 .discover {
+  display: flex;
   height: 102rpx;
   border-radius: 52rpx;
   flex-direction: row;
@@ -73,6 +112,8 @@
   bottom: 10rpx;
   border-radius: 10rpx;
   background-color: #fa618d;
+  transition-property: width margin-left;
+  transition-duration: 0.5s;
 }
 .category > .label {
   color: #fa608f;

@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"Q-UI/Q-layout/Q-layout":1,"components/Home/Home":1,"components/cart-list/cart-list":1,"components/discover/discover":1,"pages/index/components/nav":1,"pages/index/components/tabBar":1,"Q-UI/Q-icon/Q-icon":1,"components/card-2/card-2":1,"components/navigation/navigation":1,"components/card-1/card-1":1};
+/******/ 		var cssChunks = {"Q-UI/Q-layout/Q-layout":1,"components/discover/discover":1,"components/Home/Home":1,"components/cart-list/cart-list":1,"pages/index/components/nav":1,"pages/index/components/tabBar":1,"Q-UI/Q-icon/Q-icon":1,"components/card-2/card-2":1,"components/navigation/navigation":1,"components/card-4/card-4":1,"components/card-1/card-1":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"Q-UI/Q-layout/Q-layout":"Q-UI/Q-layout/Q-layout","components/Home/Home":"components/Home/Home","components/cart-list/cart-list":"components/cart-list/cart-list","components/discover/discover":"components/discover/discover","pages/index/components/nav":"pages/index/components/nav","pages/index/components/tabBar":"pages/index/components/tabBar","Q-UI/Q-icon/Q-icon":"Q-UI/Q-icon/Q-icon","components/card-2/card-2":"components/card-2/card-2","components/navigation/navigation":"components/navigation/navigation","components/card-1/card-1":"components/card-1/card-1","components/card-4/card-4":"components/card-4/card-4"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"Q-UI/Q-layout/Q-layout":"Q-UI/Q-layout/Q-layout","components/discover/discover":"components/discover/discover","components/Home/Home":"components/Home/Home","components/cart-list/cart-list":"components/cart-list/cart-list","pages/index/components/nav":"pages/index/components/nav","pages/index/components/tabBar":"pages/index/components/tabBar","Q-UI/Q-icon/Q-icon":"Q-UI/Q-icon/Q-icon","components/card-2/card-2":"components/card-2/card-2","components/navigation/navigation":"components/navigation/navigation","components/card-4/card-4":"components/card-4/card-4","components/card-1/card-1":"components/card-1/card-1"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

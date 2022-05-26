@@ -19,8 +19,8 @@
 }
 /* 颜色变量 */
 $grey: #8a8a8a;
-$star:#ffba38;
-$bj:#eeeff4;
+$star: #ffba38;
+$bj: #eeeff4;
 // header
 $header-Height: 110rpx;
 $footer-Height: 118rpx;
@@ -29,8 +29,11 @@ $footer-Height: 118rpx;
 $tabs-padding: 10rpx;
 $Margins: 20rpx;
 
-
-
+//导出对象
+:export {
+	//$tabs-padding + $Margins
+	margin: 30;
+}
 
 /* 行为相关颜色 */
 $uni-color-primary: #007aff;

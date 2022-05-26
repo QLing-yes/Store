@@ -104,10 +104,10 @@ try {
       return __webpack_require__.e(/*! import() | components/Home/Home */ "components/Home/Home").then(__webpack_require__.bind(null, /*! @/components/Home/Home.vue */ 56))
     },
     discover: function() {
-      return __webpack_require__.e(/*! import() | components/discover/discover */ "components/discover/discover").then(__webpack_require__.bind(null, /*! @/components/discover/discover.vue */ 63))
+      return Promise.all(/*! import() | components/discover/discover */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/discover/discover")]).then(__webpack_require__.bind(null, /*! @/components/discover/discover.vue */ 63))
     },
     cartList: function() {
-      return __webpack_require__.e(/*! import() | components/cart-list/cart-list */ "components/cart-list/cart-list").then(__webpack_require__.bind(null, /*! @/components/cart-list/cart-list.vue */ 70))
+      return __webpack_require__.e(/*! import() | components/cart-list/cart-list */ "components/cart-list/cart-list").then(__webpack_require__.bind(null, /*! @/components/cart-list/cart-list.vue */ 71))
     }
   }
 } catch (e) {
@@ -274,7 +274,7 @@ var _configure = __webpack_require__(/*! @/common/configure.json */ 24); //
 //
 //
 //
-var myNav = function myNav() {__webpack_require__.e(/*! require.ensure | pages/index/components/nav */ "pages/index/components/nav").then((function () {return resolve(__webpack_require__(/*! ./components/nav.vue */ 77));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var mytabBar = function mytabBar() {__webpack_require__.e(/*! require.ensure | pages/index/components/tabBar */ "pages/index/components/tabBar").then((function () {return resolve(__webpack_require__(/*! ./components/tabBar.vue */ 84));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { myNav: myNav, mytabBar: mytabBar }, mixins: [], data: function data() {return { current: 1, Page: _configure.tabBar };}, onLoad: function onLoad() {}, onReady: function onReady() {}, methods: { nav: function nav() {uni.navigateTo({ url: '../../pages/cart/cart' });} }, computed: { swiperItem: function swiperItem() {return "width: 750rpx;transform: translateX(-".concat(750 * this.current, "rpx);");}, Qlayout: function Qlayout() {return 'height: 100vh;background-color: #eeeff4;';} } };exports.default = _default;
+var myNav = function myNav() {__webpack_require__.e(/*! require.ensure | pages/index/components/nav */ "pages/index/components/nav").then((function () {return resolve(__webpack_require__(/*! ./components/nav.vue */ 78));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var mytabBar = function mytabBar() {__webpack_require__.e(/*! require.ensure | pages/index/components/tabBar */ "pages/index/components/tabBar").then((function () {return resolve(__webpack_require__(/*! ./components/tabBar.vue */ 85));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { myNav: myNav, mytabBar: mytabBar }, mixins: [], data: function data() {return { current: 1, Page: _configure.tabBar };}, onLoad: function onLoad() {}, onReady: function onReady() {}, methods: { nav: function nav() {uni.navigateTo({ url: '../../pages/cart/cart' });} }, computed: { swiperItem: function swiperItem() {return "width: 750rpx;transform: translateX(-".concat(750 * this.current, "rpx);");}, Qlayout: function Qlayout() {return 'height: 100vh;background-color: #eeeff4;';} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

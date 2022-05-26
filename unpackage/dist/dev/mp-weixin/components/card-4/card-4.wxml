@@ -1,1 +1,1 @@
-<cell vue-id="8ad28dbc-1" bind:__l="__l" vue-slots="{{['default']}}">233</cell>
+<view class="card"><view class="img"></view><view class="content"><text class="title">lincah Sarawak</text><view class="price" style="flex-direction:row;"><text class="new">$125</text><text class="old">$169</text></view></view><text class="icon tab"></text></view>

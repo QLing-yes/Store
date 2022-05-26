@@ -250,7 +250,7 @@ module.exports = {
         "iconfont",
         0,
         0,
-        15
+        16
       ]
     }
   },
