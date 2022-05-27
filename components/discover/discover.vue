@@ -1,5 +1,5 @@
 <template>
-	<list class="list">
+	<list class="list" show-scrollbar="false">
 		<!-- #ifdef APP-NVUE  -->
 		<cell>
 			<!-- #endif -->
@@ -18,16 +18,20 @@
 			<text class="label" @click="current = 2">Arowana</text>
 			<text class="label" @click="current = 3">Betta Fish</text>
 		</cell>
-		<cell style="background-color: bisque;height: 300rpx;">
-		</cell>
+		<cell style="background-color: bisque;height: 300rpx;"></cell>
 		<cell class="t_margin"><text class="t">Discount and Promo</text></cell>
 		<cell v-for="(item, index) in 10"><card-4 class="card4"></card-4></cell>
 	</list>
 </template>
 
 <script>
-import uniScss from "@/uni.scss";
+import { QueryAll } from '@/Q-UI/common/public.js';
+// import uniScss from '@/uni.scss';
 // console.log(uniScss)
+let uniScss = {
+	//$tabs-padding + $Margins
+	margin: 30
+};
 export default {
 	data() {
 		return {
@@ -37,30 +41,19 @@ export default {
 	},
 	onPullDownRefresh(e) {},
 	mounted() {
-		this.$nextTick(() => {
-			uni
-				.createSelectorQuery()
-				.in(this)
-				.selectAll('.label')
-				// .boundingClientRect(data => {
-				// 	console.log(data);
-				// })
-				.fields({ size: true, rect: true }, data => {
-					this.el_label = data;
-					// console.log(this.el_label);
-				})
-				.exec();
-		});
+		// this.$nextTick(() => {});
+		setTimeout(async () => {
+			this.el_label = await QueryAll.call(this, 'label', this.$refs.category);
+			console.log(this.el_label);
+		}, 300);
 	},
-	methods: {
-	},
+	methods: {},
 	computed: {
 		Variety_line() {
 			if (this.el_label == undefined) return '';
 			let l = this.el_label[this.current].left - uniScss.margin / 2;
 			let w = this.el_label[this.current].width;
-			let css = `margin-left: ${l}px;width: ${w}px;`;
-			return css;
+			return `left: ${l}px;width: ${w}px;`;
 		}
 	}
 };
@@ -122,17 +115,17 @@ export default {
 	align-items: center;
 	height: 90rpx;
 	position: relative;
-	& > .line {
+	.line {
 		position: absolute;
 		width: 50rpx;
 		height: 10rpx;
 		bottom: 10rpx;
 		border-radius: 10rpx;
 		background-color: #fa618d;
-		transition-property: width margin-left;
+		transition-property: width, left;
 		transition-duration: 0.5s;
 	}
-	& > .label {
+	.label {
 		// color: $grey;
 		color: #fa608f;
 	}

@@ -1,17 +1,18 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/cart/cart",
-    "pages/details/details"
-  ],
-  "subPackages": [],
-  "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8",
-    "navigationStyle": "custom",
-    "pageOrientation": "portrait"
-  },
-  "usingComponents": {}
+   "pages": [
+      "pages/index/index",
+      "pages/cart/cart",
+      "pages/details/details"
+   ],
+   "subPackages": [],
+   "window": {
+      "navigationBarTextStyle": "black",
+      "navigationBarTitleText": "",
+      "navigationBarBackgroundColor": "#F8F8F8",
+      "backgroundColor": "#F8F8F8",
+      "navigationStyle": "custom",
+      "pageOrientation": "portrait"
+   },
+   "usingComponents": {},
+   "sitemapLocation": "sitemap.json"
 }

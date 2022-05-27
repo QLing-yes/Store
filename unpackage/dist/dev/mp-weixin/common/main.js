@@ -139,7 +139,6 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"margin":"30"};
     if(false) { var cssReload; }
   
 

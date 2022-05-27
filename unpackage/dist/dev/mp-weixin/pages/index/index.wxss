@@ -33,9 +33,6 @@ button {
 
 @charset "UTF-8";
 /* 颜色变量 */
-.data-v-8ddf7c9c:export {
-  margin: 30;
-}
 /* 行为相关颜色 */
 /* 文字基本颜色 */
 /* 背景颜色 */

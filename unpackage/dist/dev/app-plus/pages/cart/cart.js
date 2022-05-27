@@ -264,7 +264,7 @@ module.exports = {
         "iconfont",
         0,
         0,
-        16
+        15
       ]
     }
   },
@@ -457,31 +457,31 @@ module.exports = {
         "0",
         0,
         0,
-        15
+        14
       ],
       "bottom": [
         "0",
         0,
         0,
-        15
+        14
       ],
       "left": [
         "0",
         0,
         0,
-        15
+        14
       ],
       "right": [
         "0",
         0,
         0,
-        15
+        14
       ],
       "position": [
         "sticky",
         1,
         0,
-        15
+        14
       ]
     }
   },
@@ -491,7 +491,7 @@ module.exports = {
         "flex",
         0,
         0,
-        16
+        15
       ]
     }
   },
@@ -501,7 +501,7 @@ module.exports = {
         1,
         0,
         0,
-        17
+        16
       ]
     }
   },
@@ -643,25 +643,25 @@ module.exports = {
         "60rpx",
         0,
         0,
-        15
+        14
       ],
       "height": [
         "60rpx",
         0,
         0,
-        15
+        14
       ],
       "justifyContent": [
         "center",
         0,
         0,
-        15
+        14
       ],
       "alignItems": [
         "center",
         0,
         0,
-        15
+        14
       ]
     }
   },
@@ -671,73 +671,73 @@ module.exports = {
         "25rpx",
         0,
         0,
-        16
+        15
       ],
       "borderRadius": [
         "25rpx",
         0,
         0,
-        16
+        15
       ],
       "backgroundColor": [
         "#eb5a80",
         0,
         0,
-        16
+        15
       ],
       "color": [
         "#F0F8FF",
         0,
         0,
-        16
+        15
       ],
       "paddingLeft": [
         "7rpx",
         0,
         0,
-        16
+        15
       ],
       "paddingRight": [
         "7rpx",
         0,
         0,
-        16
+        15
       ],
       "height": [
         "28rpx",
         0,
         0,
-        16
+        15
       ],
       "lineHeight": [
         "28rpx",
         0,
         0,
-        16
+        15
       ],
       "textAlign": [
         "center",
         0,
         0,
-        16
+        15
       ],
       "position": [
         "absolute",
         0,
         0,
-        16
+        15
       ],
       "right": [
         "0rpx",
         0,
         0,
-        16
+        15
       ],
       "top": [
         "0rpx",
         0,
         0,
-        16
+        15
       ]
     }
   },
@@ -1117,25 +1117,25 @@ module.exports = {
         "row",
         0,
         0,
-        15
+        14
       ],
       "justifyContent": [
         "space-around",
         0,
         0,
-        15
+        14
       ],
       "alignItems": [
         "center",
         0,
         0,
-        15
+        14
       ],
       "height": [
         "110rpx",
         0,
         0,
-        15
+        14
       ]
     }
   },
@@ -1145,31 +1145,31 @@ module.exports = {
         1,
         0,
         0,
-        16
+        15
       ],
       "paddingTop": [
         "10rpx",
         0,
         0,
-        16
+        15
       ],
       "paddingRight": [
         "10rpx",
         0,
         0,
-        16
+        15
       ],
       "paddingBottom": [
         "10rpx",
         0,
         0,
-        16
+        15
       ],
       "paddingLeft": [
         "10rpx",
         0,
         0,
-        16
+        15
       ]
     }
   },
@@ -1351,37 +1351,37 @@ module.exports = {
         "30rpx",
         0,
         0,
-        15
+        14
       ],
       "flexDirection": [
         "row",
         0,
         0,
-        15
+        14
       ],
       "justifyContent": [
         "center",
         0,
         0,
-        15
+        14
       ],
       "alignItems": [
         "center",
         0,
         0,
-        15
+        14
       ],
       "borderRadius": [
         "32rpx",
         0,
         0,
-        15
+        14
       ],
       "backgroundColor": [
         "#ffffff",
         0,
         0,
-        15
+        14
       ]
     }
   },
@@ -1391,49 +1391,49 @@ module.exports = {
         "32rpx",
         0,
         1,
-        16
+        15
       ],
       "backgroundColor": [
         "#eeeff4",
         0,
         1,
-        16
+        15
       ],
       "width": [
         "214rpx",
         0,
         1,
-        16
+        15
       ],
       "height": [
         "214rpx",
         0,
         1,
-        16
+        15
       ],
       "marginTop": [
         "20rpx",
         0,
         1,
-        16
+        15
       ],
       "marginRight": [
         "20rpx",
         0,
         1,
-        16
+        15
       ],
       "marginBottom": [
         "20rpx",
         0,
         1,
-        16
+        15
       ],
       "marginLeft": [
         "20rpx",
         0,
         1,
-        16
+        15
       ]
     }
   },
@@ -1443,37 +1443,37 @@ module.exports = {
         "20rpx",
         0,
         1,
-        17
+        16
       ],
       "marginRight": [
         "20rpx",
         0,
         1,
-        17
+        16
       ],
       "marginBottom": [
         "20rpx",
         0,
         1,
-        17
+        16
       ],
       "marginLeft": [
         "20rpx",
         0,
         1,
-        17
+        16
       ],
       "flex": [
         1,
         0,
         1,
-        17
+        16
       ],
       "height": [
         "214rpx",
         0,
         1,
-        17
+        16
       ]
     }
   },
@@ -1483,7 +1483,7 @@ module.exports = {
         "600",
         0,
         2,
-        18
+        17
       ]
     }
   },
@@ -1493,19 +1493,19 @@ module.exports = {
         "20rpx",
         0,
         2,
-        19
+        18
       ],
       "color": [
         "#8a8a8a",
         0,
         2,
-        19
+        18
       ],
       "flex": [
         1,
         0,
         2,
-        19
+        18
       ]
     }
   },
@@ -1515,13 +1515,13 @@ module.exports = {
         "row",
         0,
         2,
-        20
+        19
       ],
       "alignItems": [
         "center",
         0,
         2,
-        20
+        19
       ]
     }
   },
@@ -1531,25 +1531,25 @@ module.exports = {
         "600",
         0,
         3,
-        21
+        20
       ],
       "fontSize": [
         "30rpx",
         0,
         3,
-        21
+        20
       ],
       "color": [
         "#8a8a8a",
         0,
         3,
-        21
+        20
       ],
       "flex": [
         1,
         0,
         3,
-        21
+        20
       ]
     }
   },
@@ -1559,67 +1559,67 @@ module.exports = {
         "164rpx",
         0,
         3,
-        22
+        21
       ],
       "height": [
         "66rpx",
         0,
         3,
-        22
+        21
       ],
       "borderRadius": [
         "16rpx",
         0,
         3,
-        22
+        21
       ],
       "flexDirection": [
         "row",
         0,
         3,
-        22
+        21
       ],
       "justifyContent": [
         "center",
         0,
         3,
-        22
+        21
       ],
       "alignItems": [
         "center",
         0,
         3,
-        22
+        21
       ],
       "backgroundColor": [
         "#eeeff4",
         0,
         3,
-        22
+        21
       ],
       "paddingTop": [
         "20rpx",
         0,
         3,
-        22
+        21
       ],
       "paddingRight": [
         "20rpx",
         0,
         3,
-        22
+        21
       ],
       "paddingBottom": [
         "20rpx",
         0,
         3,
-        22
+        21
       ],
       "paddingLeft": [
         "20rpx",
         0,
         3,
-        22
+        21
       ]
     }
   },
@@ -1629,43 +1629,43 @@ module.exports = {
         "600",
         0,
         4,
-        23
+        22
       ],
       "backgroundColor": [
         "#ffffff",
         0,
         4,
-        23
+        22
       ],
       "width": [
         "35rpx",
         0,
         4,
-        23
+        22
       ],
       "height": [
         "35rpx",
         0,
         4,
-        23
+        22
       ],
       "lineHeight": [
         "35rpx",
         0,
         4,
-        23
+        22
       ],
       "textAlign": [
         "center",
         0,
         4,
-        23
+        22
       ],
       "borderRadius": [
         "10rpx",
         0,
         4,
-        23
+        22
       ]
     }
   },
@@ -1675,37 +1675,37 @@ module.exports = {
         "600",
         0,
         4,
-        24
+        23
       ],
       "fontSize": [
         "30rpx",
         0,
         4,
-        24
+        23
       ],
       "marginTop": [
         "10rpx",
         0,
         4,
-        24
+        23
       ],
       "marginRight": [
         "10rpx",
         0,
         4,
-        24
+        23
       ],
       "marginBottom": [
         "10rpx",
         0,
         4,
-        24
+        23
       ],
       "marginLeft": [
         "10rpx",
         0,
         4,
-        24
+        23
       ]
     }
   },
@@ -1764,31 +1764,31 @@ module.exports = {
         1,
         0,
         0,
-        15
+        14
       ],
       "marginTop": [
         "30rpx",
         0,
         0,
-        15
+        14
       ],
       "marginRight": [
         "30rpx",
         0,
         0,
-        15
+        14
       ],
       "marginBottom": [
         "30rpx",
         0,
         0,
-        15
+        14
       ],
       "marginLeft": [
         "30rpx",
         0,
         0,
-        15
+        14
       ]
     }
   },
@@ -1798,7 +1798,7 @@ module.exports = {
         "#eeeff4",
         0,
         0,
-        16
+        15
       ]
     }
   },
@@ -1808,7 +1808,7 @@ module.exports = {
         "#eeeff4",
         0,
         1,
-        17
+        16
       ]
     }
   },
@@ -1818,67 +1818,67 @@ module.exports = {
         "80rpx",
         0,
         0,
-        18
+        17
       ],
       "height": [
         "80rpx",
         0,
         0,
-        18
+        17
       ],
       "borderRadius": [
         "20rpx",
         0,
         0,
-        18
+        17
       ],
       "marginTop": [
         "20rpx",
         0,
         0,
-        18
+        17
       ],
       "marginRight": [
         "20rpx",
         0,
         0,
-        18
+        17
       ],
       "marginBottom": [
         "20rpx",
         0,
         0,
-        18
+        17
       ],
       "marginLeft": [
         "20rpx",
         0,
         0,
-        18
+        17
       ],
       "lineHeight": [
         "80rpx",
         0,
         0,
-        18
+        17
       ],
       "textAlign": [
         "center",
         0,
         0,
-        18
+        17
       ],
       "color": [
         "#000000",
         0,
         0,
-        18
+        17
       ],
       "backgroundColor": [
         "#ffffff",
         0,
         0,
-        18
+        17
       ]
     }
   },
@@ -1888,19 +1888,19 @@ module.exports = {
         "600",
         0,
         0,
-        19
+        18
       ],
       "fontSize": [
         "36rpx",
         0,
         0,
-        19
+        18
       ],
       "textAlign": [
         "center",
         0,
         0,
-        19
+        18
       ]
     }
   },
@@ -1910,31 +1910,31 @@ module.exports = {
         "#ffffff",
         0,
         0,
-        20
+        19
       ],
       "paddingTop": [
         "0rpx",
         0,
         0,
-        20
+        19
       ],
       "paddingRight": [
         "30rpx",
         0,
         0,
-        20
+        19
       ],
       "paddingBottom": [
         "30rpx",
         0,
         0,
-        20
+        19
       ],
       "paddingLeft": [
         "30rpx",
         0,
         0,
-        20
+        19
       ]
     }
   },
@@ -1944,37 +1944,37 @@ module.exports = {
         "row",
         0,
         1,
-        21
+        20
       ],
       "justifyContent": [
         "space-between",
         0,
         1,
-        21
+        20
       ],
       "paddingTop": [
         "20rpx",
         0,
         1,
-        21
+        20
       ],
       "paddingRight": [
         "30rpx",
         0,
         1,
-        21
+        20
       ],
       "paddingBottom": [
         "20rpx",
         0,
         1,
-        21
+        20
       ],
       "paddingLeft": [
         "30rpx",
         0,
         1,
-        21
+        20
       ]
     }
   },
@@ -1984,13 +1984,13 @@ module.exports = {
         "600",
         0,
         2,
-        22
+        21
       ],
       "fontSize": [
         "35rpx",
         0,
         2,
-        22
+        21
       ]
     }
   },
@@ -2000,43 +2000,43 @@ module.exports = {
         "row-reverse",
         0,
         1,
-        23
+        22
       ],
       "backgroundColor": [
         "#cf1669",
         0,
         1,
-        23
+        22
       ],
       "backgroundImage": [
         "linear-gradient(to bottom, #f54ea2, #ff7676)",
         0,
         1,
-        23
+        22
       ],
       "borderRadius": [
         "30rpx",
         0,
         1,
-        23
+        22
       ],
       "paddingLeft": [
         "30rpx",
         0,
         1,
-        23
+        22
       ],
       "justifyContent": [
         "space-between",
         0,
         1,
-        23
+        22
       ],
       "alignItems": [
         "center",
         0,
         1,
-        23
+        22
       ]
     }
   },
@@ -2046,67 +2046,67 @@ module.exports = {
         "#ffffff",
         0,
         2,
-        24
+        23
       ],
       "backgroundColor": [
         "#f783ac",
         0,
         2,
-        24
+        23
       ],
       "width": [
         "80rpx",
         0,
         2,
-        24
+        23
       ],
       "height": [
         "80rpx",
         0,
         2,
-        24
+        23
       ],
       "borderRadius": [
         "20rpx",
         0,
         2,
-        24
+        23
       ],
       "marginTop": [
         "20rpx",
         0,
         2,
-        24
+        23
       ],
       "marginRight": [
         "20rpx",
         0,
         2,
-        24
+        23
       ],
       "marginBottom": [
         "20rpx",
         0,
         2,
-        24
+        23
       ],
       "marginLeft": [
         "20rpx",
         0,
         2,
-        24
+        23
       ],
       "lineHeight": [
         "80rpx",
         0,
         2,
-        24
+        23
       ],
       "textAlign": [
         "center",
         0,
         2,
-        24
+        23
       ]
     }
   },
@@ -2116,19 +2116,19 @@ module.exports = {
         "#ffffff",
         0,
         2,
-        25
+        24
       ],
       "width": [
         "2rpx",
         0,
         2,
-        25
+        24
       ],
       "height": [
         "45rpx",
         0,
         2,
-        25
+        24
       ]
     }
   },
@@ -2138,13 +2138,13 @@ module.exports = {
         "30rpx",
         0,
         2,
-        26
+        25
       ],
       "color": [
         "#ffffff",
         0,
         2,
-        26
+        25
       ]
     }
   },

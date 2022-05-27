@@ -80,7 +80,7 @@ var components
 try {
   components = {
     card1: function() {
-      return __webpack_require__.e(/*! import() | components/card-1/card-1 */ "components/card-1/card-1").then(__webpack_require__.bind(null, /*! @/components/card-1/card-1.vue */ 113))
+      return __webpack_require__.e(/*! import() | components/card-1/card-1 */ "components/card-1/card-1").then(__webpack_require__.bind(null, /*! @/components/card-1/card-1.vue */ 115))
     }
   }
 } catch (e) {
@@ -202,7 +202,6 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"margin":"30"};
     if(false) { var cssReload; }
   
 

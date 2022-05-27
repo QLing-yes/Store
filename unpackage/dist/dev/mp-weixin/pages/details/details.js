@@ -101,7 +101,7 @@ try {
       return __webpack_require__.e(/*! import() | Q-UI/Q-layout/Q-layout */ "Q-UI/Q-layout/Q-layout").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-layout/Q-layout.vue */ 49))
     },
     QIcon: function() {
-      return __webpack_require__.e(/*! import() | Q-UI/Q-icon/Q-icon */ "Q-UI/Q-icon/Q-icon").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-icon/Q-icon.vue */ 99))
+      return __webpack_require__.e(/*! import() | Q-UI/Q-icon/Q-icon */ "Q-UI/Q-icon/Q-icon").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-icon/Q-icon.vue */ 101))
     }
   }
 } catch (e) {
@@ -342,7 +342,6 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"margin":"30"};
     if(false) { var cssReload; }
   
 

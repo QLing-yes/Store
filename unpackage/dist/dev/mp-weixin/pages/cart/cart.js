@@ -101,13 +101,13 @@ try {
       return __webpack_require__.e(/*! import() | Q-UI/Q-layout/Q-layout */ "Q-UI/Q-layout/Q-layout").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-layout/Q-layout.vue */ 49))
     },
     navigation: function() {
-      return __webpack_require__.e(/*! import() | components/navigation/navigation */ "components/navigation/navigation").then(__webpack_require__.bind(null, /*! @/components/navigation/navigation.vue */ 92))
+      return __webpack_require__.e(/*! import() | components/navigation/navigation */ "components/navigation/navigation").then(__webpack_require__.bind(null, /*! @/components/navigation/navigation.vue */ 94))
     },
     QIcon: function() {
-      return __webpack_require__.e(/*! import() | Q-UI/Q-icon/Q-icon */ "Q-UI/Q-icon/Q-icon").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-icon/Q-icon.vue */ 99))
+      return __webpack_require__.e(/*! import() | Q-UI/Q-icon/Q-icon */ "Q-UI/Q-icon/Q-icon").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-icon/Q-icon.vue */ 101))
     },
     card2: function() {
-      return __webpack_require__.e(/*! import() | components/card-2/card-2 */ "components/card-2/card-2").then(__webpack_require__.bind(null, /*! @/components/card-2/card-2.vue */ 106))
+      return __webpack_require__.e(/*! import() | components/card-2/card-2 */ "components/card-2/card-2").then(__webpack_require__.bind(null, /*! @/components/card-2/card-2.vue */ 108))
     }
   }
 } catch (e) {
@@ -300,7 +300,6 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"margin":"30"};
     if(false) { var cssReload; }
   
 
