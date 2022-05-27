@@ -69,25 +69,8 @@
   flex: 1;
   margin-right: 52rpx;
 }
-.category {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 90rpx;
-  position: relative;
-}
-.category .line {
-  position: absolute;
-  width: 50rpx;
-  height: 10rpx;
-  bottom: 10rpx;
-  border-radius: 10rpx;
-  background-color: #fa618d;
-  transition-property: width, left;
-  transition-duration: 0.5s;
-}
-.category .label {
+.label {
   color: #fa608f;
+  margin-right: 40rpx;
 }
 

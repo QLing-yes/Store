@@ -55,6 +55,7 @@ export function QueryAll(name, ref) {
 			})
 			.exec();
 		//#endif
+		
 		//#ifdef APP-PLUS
 		let data = [];
 		if (ref.classList.includes(name)) {

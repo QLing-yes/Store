@@ -101,7 +101,7 @@ try {
       return __webpack_require__.e(/*! import() | Q-UI/Q-layout/Q-layout */ "Q-UI/Q-layout/Q-layout").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-layout/Q-layout.vue */ 49))
     },
     QIcon: function() {
-      return __webpack_require__.e(/*! import() | Q-UI/Q-icon/Q-icon */ "Q-UI/Q-icon/Q-icon").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-icon/Q-icon.vue */ 101))
+      return __webpack_require__.e(/*! import() | Q-UI/Q-icon/Q-icon */ "Q-UI/Q-icon/Q-icon").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-icon/Q-icon.vue */ 98))
     }
   }
 } catch (e) {
