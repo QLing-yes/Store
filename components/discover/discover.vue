@@ -12,11 +12,21 @@
 			<input placeholder-style="color: #ffffff;" class="input" type="text" placeholder="Search..." />
 		</cell>
 		<cell>
-			<Q-scroll-view-x :current="current" label_name="label">
-				<text class="label" @click="label_tab(i)" v-for="(item, i) in labels">{{ item }}</text>
-			</Q-scroll-view-x>
+			<Q-scroll-tab-x :current="current" label_name="label">
+				<text class="label" @click="current = i" v-for="(item, i) in labels">{{ item }}</text>
+			</Q-scroll-tab-x>
 		</cell>
-		<cell style="background-color: bisque;height: 300rpx;"></cell>
+		<cell class="swiper">
+			<swiper class="swiper" :current="current" @change="current = $event.detail.current" skip-hidden-item-layout="true">
+				<swiper-item v-for="(item, i) in labels">
+					<scroll-view class="item" scroll-x="true" show-scrollbar="false">
+						<view class="scroll_content">
+							<card-3 v-for="c in 4"></card-3>
+						</view>
+					</scroll-view>
+				</swiper-item>
+			</swiper>
+		</cell>
 		<cell class="t_margin"><text class="t">Discount and Promo</text></cell>
 		<cell v-for="(item, index) in 10"><card-4 class="card4"></card-4></cell>
 	</list>
@@ -24,35 +34,37 @@
 
 <script>
 import { QueryAll } from '@/Q-UI/common/public.js';
-// import uniScss from '@/uni.scss';
-// console.log(uniScss)
-let uniScss = {
-	//$tabs-padding + $Margins
-	margin: 30
-};
 export default {
 	data() {
 		return {
 			current: 0,
-			labels: ['All', 'Arapaima', 'Arowana', 'Betta Fish', 'Betta Fish', 'Betta Fish', 'Betta Fish', 'Betta Fish']
+			labels: ['All', 'Arapaima', 'Arowana', 'Betta Fish1', 'Betta Fish2', 'Betta Fish3', 'Betta Fish4', 'Betta Fish5']
 		};
 	},
 	onPullDownRefresh(e) {},
 	mounted() {},
-	methods: {
-		label_tab(i) {
-			this.current = i;
-			// setTimeout(() => {
-			// 	this.scrollTo = i;
-			// }, 300);
-		}
-	},
+	methods: {},
 	computed: {}
 };
 </script>
 
 <style lang="scss">
 @import '@/Q-UI/common/public.scss';
+.swiper {
+	height: 434rpx;
+	.item {
+		display: flex;
+		flex-direction: row;
+		padding-right: 30rpx;
+		.scroll_content {
+			display: flex;
+			flex-direction: row;
+			// #ifndef APP-PLUS
+			white-space: nowrap;
+			// #endif
+		}
+	}
+}
 .t {
 	font-weight: 600;
 	font-size: 35rpx;

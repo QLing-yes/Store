@@ -25,8 +25,8 @@
   height: 10rpx;
   border-radius: 10rpx;
   background-color: #fa618d;
-  position: absolute;
   bottom: 10rpx;
+  position: absolute;
   transition-property: width, left;
   transition-duration: 0.5s;
 }

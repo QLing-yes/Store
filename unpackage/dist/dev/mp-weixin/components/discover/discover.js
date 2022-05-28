@@ -195,11 +195,14 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
-    QScrollViewX: function() {
-      return Promise.all(/*! import() | Q-UI/Q-scroll-view-x/Q-scroll-view-x */[__webpack_require__.e("common/vendor"), __webpack_require__.e("Q-UI/Q-scroll-view-x/Q-scroll-view-x")]).then(__webpack_require__.bind(null, /*! @/Q-UI/Q-scroll-view-x/Q-scroll-view-x.vue */ 119))
+    QScrollTabX: function() {
+      return Promise.all(/*! import() | Q-UI/Q-scroll-tab-x/Q-scroll-tab-x */[__webpack_require__.e("common/vendor"), __webpack_require__.e("Q-UI/Q-scroll-tab-x/Q-scroll-tab-x")]).then(__webpack_require__.bind(null, /*! @/Q-UI/Q-scroll-tab-x/Q-scroll-tab-x.vue */ 119))
+    },
+    card3: function() {
+      return __webpack_require__.e(/*! import() | components/card-3/card-3 */ "components/card-3/card-3").then(__webpack_require__.bind(null, /*! @/components/card-3/card-3.vue */ 129))
     },
     card4: function() {
-      return __webpack_require__.e(/*! import() | components/card-4/card-4 */ "components/card-4/card-4").then(__webpack_require__.bind(null, /*! @/components/card-4/card-4.vue */ 129))
+      return __webpack_require__.e(/*! import() | components/card-4/card-4 */ "components/card-4/card-4").then(__webpack_require__.bind(null, /*! @/components/card-4/card-4.vue */ 136))
     }
   }
 } catch (e) {
@@ -223,6 +226,21 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  if (!_vm._isMounted) {
+    _vm.e0 = function($event, i) {
+      var _temp = arguments[arguments.length - 1].currentTarget.dataset,
+        _temp2 = _temp.eventParams || _temp["event-params"],
+        i = _temp2.i
+
+      var _temp, _temp2
+
+      _vm.current = i
+    }
+
+    _vm.e1 = function($event) {
+      _vm.current = $event.detail.current
+    }
+  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -281,6 +299,16 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
+
+
 var _public = __webpack_require__(/*! @/Q-UI/common/public.js */ 12); //
 //
 //
@@ -305,13 +333,17 @@ var _public = __webpack_require__(/*! @/Q-UI/common/public.js */ 12); //
 //
 //
 //
-// import uniScss from '@/uni.scss';
-// console.log(uniScss)
-var uniScss = { //$tabs-padding + $Margins
-  margin: 30 };var _default = { data: function data() {return { current: 0, labels: ['All', 'Arapaima', 'Arowana', 'Betta Fish', 'Betta Fish', 'Betta Fish', 'Betta Fish', 'Betta Fish'] };}, onPullDownRefresh: function onPullDownRefresh(e) {}, mounted: function mounted() {}, methods: { label_tab: function label_tab(i) {this.current = i; // setTimeout(() => {
-      // 	this.scrollTo = i;
-      // }, 300);
-    } }, computed: {} };exports.default = _default;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = { data: function data() {return { current: 0, labels: ['All', 'Arapaima', 'Arowana', 'Betta Fish1', 'Betta Fish2', 'Betta Fish3', 'Betta Fish4', 'Betta Fish5'] };}, onPullDownRefresh: function onPullDownRefresh(e) {}, mounted: function mounted() {}, methods: {}, computed: {} };exports.default = _default;
 
 /***/ }),
 

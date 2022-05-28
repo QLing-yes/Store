@@ -12,7 +12,7 @@
 		</view>
 
 		<template v-slot:footer>
-			<mytabBar @current="current = $event"></mytabBar>
+			<mytabBar :current="current" @current="current = $event"></mytabBar>
 		</template>
 	</Q-layout>
 </template>

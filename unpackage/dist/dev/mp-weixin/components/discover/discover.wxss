@@ -27,6 +27,19 @@
 .flex {
   display: flex;
 }
+.swiper {
+  height: 434rpx;
+}
+.swiper .item {
+  display: flex;
+  flex-direction: row;
+  padding-right: 30rpx;
+}
+.swiper .item .scroll_content {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
 .t {
   font-weight: 600;
   font-size: 35rpx;

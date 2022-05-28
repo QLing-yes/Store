@@ -10,7 +10,7 @@
 		enable-flex="true"
 	>
 		<view ref="category" class="category">
-			<view class="line" :style="Variety_line"></view>
+			<view class="line" :style="Variety_line + line_css"></view>
 			<slot></slot>
 		</view>
 	</scroll-view>
@@ -26,17 +26,22 @@ export default {
 		};
 	},
 	props: {
-		//下标线位置
+		//".line"位置
 		current: {
 			type: Number,
 			default: 0
+		},
+		//".line"的更多样式
+		line_css: {
+			type: String,
+			default: ''
 		},
 		//滚动到id
 		scroll_to_id: {
 			type: String,
 			default: ''
 		},
-		//元素class
+		//slot内容的class
 		label_name: {
 			type: String,
 			default: ''
@@ -85,9 +90,9 @@ export default {
 		height: 10rpx;
 		border-radius: 10rpx;
 		background-color: #fa618d;
+		bottom: 10rpx;
 
 		position: absolute;
-		bottom: 10rpx;
 		transition-property: width, left;
 		transition-duration: 0.5s;
 	}

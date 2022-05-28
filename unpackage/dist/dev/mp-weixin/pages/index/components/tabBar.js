@@ -104,18 +104,6 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  if (!_vm._isMounted) {
-    _vm.e0 = function($event, i) {
-      var _temp = arguments[arguments.length - 1].currentTarget.dataset,
-        _temp2 = _temp.eventParams || _temp["event-params"],
-        i = _temp2.i
-
-      var _temp, _temp2
-
-      _vm.current = i
-      _vm.$emit("current", _vm.current)
-    }
-  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -166,7 +154,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-
 var _configure = __webpack_require__(/*! @/common/configure.json */ 24); //
 //
 //
@@ -183,8 +170,7 @@ var _configure = __webpack_require__(/*! @/common/configure.json */ 24); //
 //
 //
 //
-//
-var _default = { data: function data() {return { tabs: _configure.tabBar, current: 0 };}, props: {}, mounted: function mounted() {}, methods: {}, computed: {} };exports.default = _default;
+var _default = { data: function data() {return { tabs: _configure.tabBar };}, props: { current: { type: Number, default: 0 } }, mounted: function mounted() {}, methods: {}, computed: {} };exports.default = _default;
 
 /***/ }),
 

@@ -3,8 +3,7 @@
 		<Q-icon n="9" v-for="(item, i) in tabs" :key="item.pagePath">
 			<text
 				@click="
-					current = i;
-					$emit('current', current);
+					$emit('current', i);
 				"
 				class="tab icon"
 				:style="'width:' + 750 / (tabs.length + 1) + 'rpx;'"
@@ -20,11 +19,15 @@ import { tabBar } from '@/common/configure.json';
 export default {
 	data() {
 		return {
-			tabs: tabBar,
-			current: 0
+			tabs: tabBar
 		};
 	},
-	props: {},
+	props: {
+		current: {
+			type: Number,
+			default: 0
+		}
+	},
 	mounted() {},
 	methods: {},
 	computed: {}

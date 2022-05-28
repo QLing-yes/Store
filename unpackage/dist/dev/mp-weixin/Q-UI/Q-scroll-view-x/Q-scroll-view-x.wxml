@@ -1,1 +1,0 @@
-<scroll-view class="scroll-view vue-ref" scroll-into-view="{{scroll_to_id}}" scroll-x="true" scroll-with-animation="true" show-scrollbar="false" scroll-anchoring="true" enable-flex="true" data-ref="scroll-view"><view data-ref="category" class="category vue-ref"><view class="line" style="{{(Variety_line)}}"></view><slot></slot></view></scroll-view>

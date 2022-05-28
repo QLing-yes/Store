@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "q-scroll-view-x": "/Q-UI/Q-scroll-view-x/Q-scroll-view-x",
+    "q-scroll-tab-x": "/Q-UI/Q-scroll-tab-x/Q-scroll-tab-x",
+    "card-3": "/components/card-3/card-3",
     "card-4": "/components/card-4/card-4"
   },
   "component": true
