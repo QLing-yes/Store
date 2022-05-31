@@ -83,7 +83,7 @@ try {
       return __webpack_require__.e(/*! import() | Q-UI/Q-layout/Q-layout */ "Q-UI/Q-layout/Q-layout").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-layout/Q-layout.vue */ 49))
     },
     card2: function() {
-      return __webpack_require__.e(/*! import() | components/card-2/card-2 */ "components/card-2/card-2").then(__webpack_require__.bind(null, /*! @/components/card-2/card-2.vue */ 105))
+      return __webpack_require__.e(/*! import() | components/card-2/card-2 */ "components/card-2/card-2").then(__webpack_require__.bind(null, /*! @/components/card-2/card-2.vue */ 112))
     }
   }
 } catch (e) {
@@ -141,8 +141,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
 //
 //
 //

@@ -196,13 +196,13 @@ var components
 try {
   components = {
     QScrollTabX: function() {
-      return Promise.all(/*! import() | Q-UI/Q-scroll-tab-x/Q-scroll-tab-x */[__webpack_require__.e("common/vendor"), __webpack_require__.e("Q-UI/Q-scroll-tab-x/Q-scroll-tab-x")]).then(__webpack_require__.bind(null, /*! @/Q-UI/Q-scroll-tab-x/Q-scroll-tab-x.vue */ 119))
+      return Promise.all(/*! import() | Q-UI/Q-scroll-tab-x/Q-scroll-tab-x */[__webpack_require__.e("common/vendor"), __webpack_require__.e("Q-UI/Q-scroll-tab-x/Q-scroll-tab-x")]).then(__webpack_require__.bind(null, /*! @/Q-UI/Q-scroll-tab-x/Q-scroll-tab-x.vue */ 126))
     },
     card3: function() {
-      return __webpack_require__.e(/*! import() | components/card-3/card-3 */ "components/card-3/card-3").then(__webpack_require__.bind(null, /*! @/components/card-3/card-3.vue */ 129))
+      return __webpack_require__.e(/*! import() | components/card-3/card-3 */ "components/card-3/card-3").then(__webpack_require__.bind(null, /*! @/components/card-3/card-3.vue */ 136))
     },
     card4: function() {
-      return __webpack_require__.e(/*! import() | components/card-4/card-4 */ "components/card-4/card-4").then(__webpack_require__.bind(null, /*! @/components/card-4/card-4.vue */ 136))
+      return __webpack_require__.e(/*! import() | components/card-4/card-4 */ "components/card-4/card-4").then(__webpack_require__.bind(null, /*! @/components/card-4/card-4.vue */ 143))
     }
   }
 } catch (e) {

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.body {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.user {
+  flex-direction: row;
+  height: 150rpx;
+  margin-top: 20rpx;
+}
+.user > .img {
+  background-color: #dcd6db;
+  width: 150rpx;
+  border-radius: 150rpx;
+}
+.user > .txt {
+  flex: 1;
+  justify-content: center;
+  margin-left: 23rpx;
+}
+.user > .txt .name {
+  font-weight: 600;
+}
+.user > .txt .uid {
+  margin-top: 8rpx;
+  margin-bottom: 8rpx;
+  color: #8a8a8a;
+  font-size: 25rpx;
+}
+.user > .icon {
+  width: 50rpx;
+  margin-top: 25rpx;
+  text-align: center;
+  font-size: 60rpx;
+  color: #495057;
+}
+.counts {
+  height: 120rpx;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.counts > .item {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.counts > .item .t1 {
+  font-weight: 600;
+  font-size: 30rpx;
+}
+.counts > .item .t2 {
+  font-weight: 500;
+  font-size: 25rpx;
+  color: #8a8a8a;
+}
+.box {
+  height: 120rpx;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.box .u {
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 120rpx;
+  border-radius: 20rpx;
+  border: 0.3rpx solid #ced4da;
+}
+.box .u .t {
+  font-weight: 600;
+  color: #343a40;
+  font-size: 35rpx;
+}
+.box .u .icon {
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+.box > .like .icon {
+  color: #ec5e83;
+}
+.box > .collect .icon {
+  color: #2f2f2f;
+}
+.partition {
+  margin-top: 60rpx;
+}
+.partition > .item {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.partition .tab {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.partition .tab > .icon_2 {
+  font-size: 40rpx;
+}
+.partition .tab > .t {
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  color: #495057;
+}
+.line {
+  height: 0.3rpx;
+  background-image: linear-gradient(to right, #ced4da, #ced4da);
+  margin-left: 55rpx;
+  margin-right: 55rpx;
+}
+.nav {
+  flex-direction: row;
+  height: 60rpx;
+  align-items: center;
+  margin-top: 30rpx;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+}
+.nav > .txt {
+  padding-left: 30rpx;
+}
+.nav > .icon2 {
+  flex: 1;
+  text-align: right;
+}
+

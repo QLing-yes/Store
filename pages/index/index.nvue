@@ -1,7 +1,7 @@
 <template>
-	<Q-layout class="Qlayout" :css="Qlayout">
+	<Q-layout class="Qlayout" :css="Qlayout" :statusbar_color="isNav[current]">
 		<template v-slot:header>
-			<myNav></myNav>
+			<myNav v-if="!isNav[current]"></myNav>
 		</template>
 
 		<view class="swiper">
@@ -9,6 +9,7 @@
 			<view class="swiper_item" :style="swiperItem"><discover></discover></view>
 			<view class="swiper_item" :style="swiperItem"></view>
 			<view class="swiper_item" :style="swiperItem"><cart-list></cart-list></view>
+			<view class="swiper_item" :style="swiperItem + 'background-color: #ffffff;'"><personal></personal></view>
 		</view>
 
 		<template v-slot:footer>
@@ -26,7 +27,8 @@ export default {
 	mixins: [],
 	data() {
 		return {
-			current: 1,
+			current: 4,
+			isNav: { 4: '#fff' },
 			Page: tabBar
 		};
 	},

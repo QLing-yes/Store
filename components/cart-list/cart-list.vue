@@ -1,5 +1,4 @@
 <template>
-	<!-- <view class="bj"> -->
 	<Q-layout class="bj" :statusbar="false">
 		
 		<list class="list" show-scrollbar="false">
@@ -20,7 +19,6 @@
 			</view>
 		</template>
 	</Q-layout>
-	<!-- </view> -->
 </template>
 
 <script>

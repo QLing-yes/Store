@@ -271,10 +271,20 @@ module.exports = {
   ".icon": {
     "": {
       "fontFamily": [
-        "iconfont",
+        "iconfont1",
         0,
         0,
         15
+      ]
+    }
+  },
+  ".icon_2": {
+    "": {
+      "fontFamily": [
+        "iconfont2",
+        0,
+        0,
+        16
       ]
     }
   },
