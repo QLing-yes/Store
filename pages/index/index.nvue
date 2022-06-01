@@ -7,7 +7,9 @@
 		<view class="swiper">
 			<view class="swiper_item" :style="swiperItem"><Home></Home></view>
 			<view class="swiper_item" :style="swiperItem"><discover></discover></view>
-			<view class="swiper_item" :style="swiperItem"></view>
+			<view class="swiper_item" :style="swiperItem">
+				<notice></notice>
+			</view>
 			<view class="swiper_item" :style="swiperItem"><cart-list></cart-list></view>
 			<view class="swiper_item" :style="swiperItem + 'background-color: #ffffff;'"><personal></personal></view>
 		</view>
@@ -27,8 +29,11 @@ export default {
 	mixins: [],
 	data() {
 		return {
-			current: 4,
-			isNav: { 4: '#fff' },
+			current: 2,
+			isNav: { 
+				2: '#fff' ,
+				4: '#fff' ,
+				},
 			Page: tabBar
 		};
 	},
