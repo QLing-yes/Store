@@ -3,6 +3,7 @@
     "q-layout": "/Q-UI/Q-layout/Q-layout",
     "navigation": "/components/navigation/navigation",
     "q-icon": "/Q-UI/Q-icon/Q-icon",
+    "q-cell": "/Q-UI/Q-cell/Q-cell",
     "card-2": "/components/card-2/card-2"
   }
 }

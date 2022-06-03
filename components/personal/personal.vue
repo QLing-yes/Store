@@ -2,7 +2,7 @@
 	<!-- #ifdef APP-PLUS -->
 	<!-- 只要一个简单的区域滚动 -->
 	<list>
-		<cell>
+		<Q-cell>
 			<!-- #endif -->
 			<view class="body">
 				<!-- user -->
@@ -70,7 +70,7 @@
 				<!-- #endif -->
 			</view>
 			<!-- #ifdef APP-PLUS -->
-		</cell>
+		</Q-cell>
 	</list>
 	<!-- #endif -->
 </template>

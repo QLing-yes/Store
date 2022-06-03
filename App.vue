@@ -17,13 +17,13 @@ plus.screen.lockOrientation('portrait-primary'); //锁定屏幕方向
 
 export default {
 	onLaunch: function() {
-		console.log('App Launch');
+		console.log('App 启动');
 	},
 	onShow: function() {
-		console.log('App Show');
+		console.log('App 展示');
 	},
 	onHide: function() {
-		console.log('App Hide');
+		console.log('App 隐藏');
 	}
 };
 </script>

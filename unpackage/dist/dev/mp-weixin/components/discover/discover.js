@@ -195,14 +195,17 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
+    QCell: function() {
+      return __webpack_require__.e(/*! import() | Q-UI/Q-cell/Q-cell */ "Q-UI/Q-cell/Q-cell").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-cell/Q-cell.vue */ 119))
+    },
     QScrollTabX: function() {
-      return Promise.all(/*! import() | Q-UI/Q-scroll-tab-x/Q-scroll-tab-x */[__webpack_require__.e("common/vendor"), __webpack_require__.e("Q-UI/Q-scroll-tab-x/Q-scroll-tab-x")]).then(__webpack_require__.bind(null, /*! @/Q-UI/Q-scroll-tab-x/Q-scroll-tab-x.vue */ 126))
+      return Promise.all(/*! import() | Q-UI/Q-scroll-tab-x/Q-scroll-tab-x */[__webpack_require__.e("common/vendor"), __webpack_require__.e("Q-UI/Q-scroll-tab-x/Q-scroll-tab-x")]).then(__webpack_require__.bind(null, /*! @/Q-UI/Q-scroll-tab-x/Q-scroll-tab-x.vue */ 138))
     },
     card3: function() {
-      return __webpack_require__.e(/*! import() | components/card-3/card-3 */ "components/card-3/card-3").then(__webpack_require__.bind(null, /*! @/components/card-3/card-3.vue */ 136))
+      return __webpack_require__.e(/*! import() | components/card-3/card-3 */ "components/card-3/card-3").then(__webpack_require__.bind(null, /*! @/components/card-3/card-3.vue */ 148))
     },
     card4: function() {
-      return __webpack_require__.e(/*! import() | components/card-4/card-4 */ "components/card-4/card-4").then(__webpack_require__.bind(null, /*! @/components/card-4/card-4.vue */ 143))
+      return __webpack_require__.e(/*! import() | components/card-4/card-4 */ "components/card-4/card-4").then(__webpack_require__.bind(null, /*! @/components/card-4/card-4.vue */ 155))
     }
   }
 } catch (e) {
@@ -307,8 +310,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-
-
 var _public = __webpack_require__(/*! @/Q-UI/common/public.js */ 12); //
 //
 //
@@ -341,9 +342,7 @@ var _public = __webpack_require__(/*! @/Q-UI/common/public.js */ 12); //
 //
 //
 //
-//
-//
-var _default = { data: function data() {return { current: 0, labels: ['All', 'Arapaima', 'Arowana', 'Betta Fish1', 'Betta Fish2', 'Betta Fish3', 'Betta Fish4', 'Betta Fish5'] };}, onPullDownRefresh: function onPullDownRefresh(e) {}, mounted: function mounted() {}, methods: {}, computed: {} };exports.default = _default;
+var _default = { options: { styleIsolation: 'shared' }, data: function data() {return { current: 0, labels: ['All', 'Arapaima', 'Arowana', 'Betta Fish1', 'Betta Fish2', 'Betta Fish3', 'Betta Fish4', 'Betta Fish5'] };}, onPullDownRefresh: function onPullDownRefresh(e) {}, mounted: function mounted() {}, methods: {}, computed: {} };exports.default = _default;
 
 /***/ }),
 

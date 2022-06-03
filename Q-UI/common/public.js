@@ -87,7 +87,7 @@ export function QueryAll(name, ref) {
 export function _component(app) {
 	//#ifndef APP-PLUS
 	app.component('list', v);
-	app.component('cell', v);
+	// app.component('cell', v);
 	app.component('header', v);
 	app.component('waterfall', v);
 	//#endif

@@ -1,0 +1,1 @@
+<view class="card5"><view class="img"></view><view class="txtBox"><view class="box"><text class="head">{{user[1]}}</text><text class="date">{{jetlag}}</text></view><text class="content">{{content[0]}}</text></view></view>

@@ -48,20 +48,26 @@ export default {
 		}
 	},
 	mounted() {
-		// this.$nextTick(() => {});
-		setTimeout(async () => {
+		//#ifndef APP-PLUS
+		this.$nextTick(this.init);
+		//#endif
+		//#ifdef APP-PLUS
+		setTimeout(this.init, 300);
+		//#endif
+	},
+	methods: {
+		async init(){
 			let l = await Query.call(this, 'scroll-view');
 			left = l.left;
-			this.el_label = await QueryAll.call(this.$parent, this.label_name, this.$refs.category);
-		}, 300);
+			this.el_label = await QueryAll.call(this.$parent.$parent, this.label_name, this.$refs.category);
+		}
 	},
-	methods: {},
 	computed: {
 		Variety_line() {
 			if (this.el_label == undefined) return '';
 			return `
-			left: ${this.el_label[this.current].left - left}px;
-			width: ${this.el_label[this.current].width}px;
+			left: ${this.el_label[this.current]?.left - left}px;
+			width: ${this.el_label[this.current]?.width}px;
 			`;
 		}
 	}

@@ -2,6 +2,9 @@
 	<Q-layout class="Qlayout" :css="Qlayout" :statusbar_color="isNav[current]">
 		<template v-slot:header>
 			<myNav v-if="!isNav[current]"></myNav>
+			<view v-if="current == 2">
+				
+			</view>
 		</template>
 
 		<view class="swiper">
@@ -64,7 +67,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .Qlayout {
 	background-color: #eeeff4;
 	//#ifndef APP-PLUS

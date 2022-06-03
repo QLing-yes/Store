@@ -100,8 +100,11 @@ try {
     QLayout: function() {
       return __webpack_require__.e(/*! import() | Q-UI/Q-layout/Q-layout */ "Q-UI/Q-layout/Q-layout").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-layout/Q-layout.vue */ 49))
     },
+    QCell: function() {
+      return __webpack_require__.e(/*! import() | Q-UI/Q-cell/Q-cell */ "Q-UI/Q-cell/Q-cell").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-cell/Q-cell.vue */ 119))
+    },
     QIcon: function() {
-      return __webpack_require__.e(/*! import() | Q-UI/Q-icon/Q-icon */ "Q-UI/Q-icon/Q-icon").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-icon/Q-icon.vue */ 105))
+      return __webpack_require__.e(/*! import() | Q-UI/Q-icon/Q-icon */ "Q-UI/Q-icon/Q-icon").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-icon/Q-icon.vue */ 112))
     }
   }
 } catch (e) {

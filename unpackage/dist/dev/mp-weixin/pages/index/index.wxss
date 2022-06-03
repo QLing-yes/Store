@@ -45,18 +45,18 @@ button {
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.Qlayout.data-v-8ddf7c9c {
+.Qlayout {
   background-color: #eeeff4;
   height: 100vh;
 }
-.swiper.data-v-8ddf7c9c {
+.swiper {
   display: flex;
   flex-direction: row;
   flex: 1;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-.swiper_item.data-v-8ddf7c9c {
+.swiper_item {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;

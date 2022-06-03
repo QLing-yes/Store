@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "q-layout": "/Q-UI/Q-layout/Q-layout",
+    "q-cell": "/Q-UI/Q-cell/Q-cell",
     "card-2": "/components/card-2/card-2"
   },
   "component": true

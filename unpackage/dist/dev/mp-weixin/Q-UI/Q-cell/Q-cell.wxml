@@ -1,0 +1,1 @@
+<view class="{{[pclass]}}" style="{{(pstyle)}}"><slot></slot></view>

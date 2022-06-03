@@ -111,13 +111,13 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 {
   onLaunch: function onLaunch() {
-    console.log('App Launch');
+    console.log('App 启动');
   },
   onShow: function onShow() {
-    console.log('App Show');
+    console.log('App 展示');
   },
   onHide: function onHide() {
-    console.log('App Hide');
+    console.log('App 隐藏');
   } };exports.default = _default;
 
 /***/ }),

@@ -10,9 +10,9 @@
 		</template>
 		
 		<list class="list" show-scrollbar="false">
-			<cell v-for="s in 6">
+			<Q-cell v-for="s in 6">
 				<card-2></card-2>
-			</cell>
+			</Q-cell>
 		</list>
 		
 		<template v-slot:footer>

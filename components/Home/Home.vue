@@ -1,6 +1,6 @@
 <template>
 	<list>
-		<cell>
+		<Q-cell>
 			<view class="title">
 				<text class="text">Most Popular</text>
 				<text class="icon">&#xe60a;</text>
@@ -8,8 +8,8 @@
 			<scroll-view class="content" :scroll-x="true" show-scrollbar="false">
 				<card-1 :bj="img2[i % 2]" :src="img[i % 2]" v-for="(item, i) in 20"></card-1>
 			</scroll-view>
-		</cell>
-		<cell>
+		</Q-cell>
+		<Q-cell>
 			<view class="title" style="margin-bottom: 60rpx;">
 				<text class="text">Lowest Prices</text>
 				<text class="icon">&#xe60a;</text>
@@ -17,7 +17,7 @@
 			<scroll-view class="content" :scroll-x="true" show-scrollbar="false">
 				<image class="img" :lazy-load="true" :draggable="false" mode="scaleToFill" :src="img3[i % 2]" v-for="(item, i) in 20"></image>
 			</scroll-view>
-		</cell>
+		</Q-cell>
 	</list>
 </template>
 

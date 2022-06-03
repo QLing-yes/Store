@@ -2,6 +2,7 @@
   "enablePullDownRefresh": true,
   "usingComponents": {
     "q-layout": "/Q-UI/Q-layout/Q-layout",
+    "q-cell": "/Q-UI/Q-cell/Q-cell",
     "q-icon": "/Q-UI/Q-icon/Q-icon"
   }
 }

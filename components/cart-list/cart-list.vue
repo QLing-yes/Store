@@ -2,8 +2,8 @@
 	<Q-layout class="bj" :statusbar="false">
 		
 		<list class="list" show-scrollbar="false">
-			<cell v-for="s in 20"><card-2></card-2></cell>
-			<cell class="padd"></cell>
+			<Q-cell v-for="s in 20"><card-2></card-2></Q-cell>
+			<Q-cell class="padd"></Q-cell>
 		</list>
 
 		<template v-slot:footer>

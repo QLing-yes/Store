@@ -20,7 +20,7 @@
 			</template>
 
 			<list class="list" :style="'margin-top:' + pageH * exhibit + 'px;'">
-				<cell>
+				<Q-cell>
 					<view class="details">
 						<text class="item1">Solid Male | {{ exhibit }}</text>
 
@@ -52,7 +52,7 @@
 						</view>
 						<text @click="exhibit = exhibit == 0 ? 0.35 : 0" style="color: #CF1669;font-size: 32rpx;font-weight: 500;">{{ exhibit != 0 ? '展开' : '收起' }}</text>
 					</view>
-				</cell>
+				</Q-cell>
 			</list>
 
 			<template v-slot:footer>

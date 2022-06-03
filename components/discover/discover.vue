@@ -1,40 +1,43 @@
 <template>
 	<list class="list" show-scrollbar="false">
 		<!-- #ifdef APP-NVUE  -->
-		<cell>
+		<Q-cell>
 			<!-- #endif -->
 			<text class="t">Discover</text>
 			<!-- #ifdef APP-NVUE  -->
-		</cell>
+		</Q-cell>
 		<!-- #endif -->
-		<cell class="discover" style="z-index: 0;">
+		<Q-cell pclass="discover" style="z-index: 0;">
 			<text class="icon">&#xe603;</text>
 			<input placeholder-style="color: #ffffff;" class="input" type="text" placeholder="Search..." />
-		</cell>
-		<cell>
+		</Q-cell>
+		<Q-cell>
 			<Q-scroll-tab-x :current="current" label_name="label">
 				<text class="label" @click="current = i" v-for="(item, i) in labels">{{ item }}</text>
 			</Q-scroll-tab-x>
-		</cell>
-		<cell class="swiper">
+		</Q-cell>
+		<Q-cell pclass="swiper">
 			<swiper class="swiper" :current="current" @change="current = $event.detail.current" skip-hidden-item-layout="true">
 				<swiper-item v-for="(item, i) in labels">
 					<scroll-view class="item" scroll-x="true" show-scrollbar="false">
-						<view class="scroll_content">
-							<card-3 v-for="c in 4"></card-3>
-						</view>
+						<view class="scroll_content"><card-3 v-for="c in 4"></card-3></view>
 					</scroll-view>
 				</swiper-item>
 			</swiper>
-		</cell>
-		<cell class="t_margin"><text class="t">Discount and Promo</text></cell>
-		<cell v-for="(item, index) in 10"><card-4 class="card4"></card-4></cell>
+		</Q-cell>
+		<Q-cell class="t_margin"><text class="t">Discount and Promo</text></Q-cell>
+		<Q-cell v-for="(item, index) in 10"><card-4 class="card4"></card-4></Q-cell>
 	</list>
 </template>
 
 <script>
 import { QueryAll } from '@/Q-UI/common/public.js';
 export default {
+	//#ifdef MP
+	options: {
+		styleIsolation: 'shared'
+	},
+	//#endif
 	data() {
 		return {
 			current: 0,

@@ -2326,7 +2326,7 @@ function QueryAll(name, ref) {var _this2 = this;
 function _component(app) {
 
   app.component('list', _view.default);
-  app.component('cell', _view.default);
+  // app.component('cell', v);
   app.component('header', _view.default);
   app.component('waterfall', _view.default);
 
@@ -2335,18 +2335,18 @@ function _component(app) {
 
 /***/ }),
 
-/***/ 131:
+/***/ 143:
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 132);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 144);
 
 /***/ }),
 
-/***/ 132:
+/***/ 144:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -2377,7 +2377,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 133);
+module.exports = __webpack_require__(/*! ./runtime */ 145);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -2394,7 +2394,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 133:
+/***/ 145:
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -3123,6 +3123,50 @@ if (hadRuntime) {
   })() || Function("return this")()
 );
 
+
+/***/ }),
+
+/***/ 167:
+/*!***************************************************!*\
+  !*** D:/Desktop/uniapp/Store/Q-UI/common/date.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.getDate = getDate;exports.EnumDate = void 0;var EnumDate = {
+  0: '一',
+  1: '二',
+  2: '三',
+  3: '四',
+  4: '五',
+  5: '六',
+  6: '天' };
+
+/**
+             * 
+             * @param {Date} o 
+             * @return {string} {Y年,M月,D日,h时,m分,s秒,ms毫秒,W周几,getTime时间戳}
+             */exports.EnumDate = EnumDate;
+function getDate() {var o = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new Date();
+  return JSON.stringify({
+    Y: o.getFullYear(),
+    M: o.getMonth() + 1,
+    D: o.getDate(),
+    h: o.getHours(),
+    m: o.getMinutes(),
+    s: o.getSeconds(),
+    ms: o.getMilliseconds(),
+    W: o.getDay(),
+    getTime: o.getTime() });
+
+}
+/*
+  	let s = ms / 1000;
+  	let m = Math.floor(s / 60) % 60;
+  	let h = Math.floor(s / 60 / 60) % 24;
+  	let D = Math.floor(s / 60 / 60 / 24);
+  */
 
 /***/ }),
 

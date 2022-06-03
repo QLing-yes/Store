@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "q-cell": "/Q-UI/Q-cell/Q-cell",
     "q-scroll-tab-x": "/Q-UI/Q-scroll-tab-x/Q-scroll-tab-x",
     "card-3": "/components/card-3/card-3",
     "card-4": "/components/card-4/card-4"

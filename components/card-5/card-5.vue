@@ -31,9 +31,9 @@ export default {
 			let m = Math.floor(s / 60) % 60;
 			let h = Math.floor(s / 60 / 60) % 24;
 			let d = Math.floor(s / 60 / 60 / 24);
-
+			// console.log(`已过去${d}天${h}小时${m}分钟${s % 60}秒`);
 			if (d > 1 && d <= 7) return '星期' + EnumDate[T.W];
-			if (d <= 30 && d > 0) return `${h}天前`;
+			if (d <= 30 && d > 0) return `${d}天前`;
 			if (h <= 24 && h > 0) return `${h}小时前`;
 			if (m <= 59 && m > 0) return `${m}分钟前`;
 			if (s <= 59 && s > 0) return '刚刚';
@@ -52,7 +52,10 @@ export default {
 	padding: 20rpx;
 	$wh: 120rpx;
 	& > .img {
-		background-color: cadetblue;
+		//#ifndef APP-PLUS
+		content-visibility: auto;
+		//#endif
+		background-color: #e7f5ff;
 		margin-right: 20rpx;
 		width: $wh;
 		height: $wh;

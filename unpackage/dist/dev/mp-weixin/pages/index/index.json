@@ -3,6 +3,7 @@
     "q-layout": "/Q-UI/Q-layout/Q-layout",
     "home": "/components/Home/Home",
     "discover": "/components/discover/discover",
+    "notice": "/components/notice/notice",
     "cart-list": "/components/cart-list/cart-list",
     "personal": "/components/personal/personal",
     "my-nav": "/pages/index/components/nav",

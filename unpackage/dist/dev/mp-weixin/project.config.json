@@ -23,7 +23,6 @@
       "minifyWXSS": true,
       "useStaticServer": true,
       "showES6CompileOption": false,
-      "compileHotReLoad": true,
       "checkInvalidKey": true,
       "babelSetting": {
          "ignore": [],
@@ -31,11 +30,10 @@
          "outputPath": ""
       },
       "disableUseStrict": false,
-      "useCompilerPlugins": false,
-      "minifyWXML": true
+      "useCompilerPlugins": false
    },
    "compileType": "miniprogram",
-   "libVersion": "2.24.1",
+   "libVersion": "2.24.5",
    "appid": "wx93e4765d2382e27a",
    "projectname": "Store",
    "condition": {},
