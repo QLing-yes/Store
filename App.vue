@@ -2,7 +2,7 @@
 //#ifdef APP-PLUS
 const dom = weex.requireModule('dom');
 const URL = {
-	iconfont1: '//at.alicdn.com/t/font_3378040_021ihj72xiy4.ttf?t=1653960644969',
+	iconfont1: '//at.alicdn.com/t/font_3378040_eqoh1ehujt5.ttf?t=1654349154422',
 	iconfont2: '//at.alicdn.com/t/font_3439911_6qx547g17k.ttf?t=1653960778872'
 };
 Object.keys(URL).forEach(e => {
@@ -33,7 +33,7 @@ export default {
 //#ifndef APP-PLUS
 @font-face {
 	font-family: 'iconfont1';
-	src: url('//at.alicdn.com/t/font_3378040_021ihj72xiy4.ttf?t=1653960644969') format('truetype');
+	src: url('//at.alicdn.com/t/font_3378040_eqoh1ehujt5.ttf?t=1654349154422') format('truetype');
 }
 @font-face {
 	font-family: 'iconfont2';

@@ -80,10 +80,10 @@ var components
 try {
   components = {
     QCell: function() {
-      return __webpack_require__.e(/*! import() | Q-UI/Q-cell/Q-cell */ "Q-UI/Q-cell/Q-cell").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-cell/Q-cell.vue */ 119))
+      return __webpack_require__.e(/*! import() | Q-UI/Q-cell/Q-cell */ "Q-UI/Q-cell/Q-cell").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-cell/Q-cell.vue */ 126))
     },
     card5: function() {
-      return Promise.all(/*! import() | components/card-5/card-5 */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/card-5/card-5")]).then(__webpack_require__.bind(null, /*! @/components/card-5/card-5.vue */ 162))
+      return Promise.all(/*! import() | components/card-5/card-5 */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/card-5/card-5")]).then(__webpack_require__.bind(null, /*! @/components/card-5/card-5.vue */ 169))
     }
   }
 } catch (e) {

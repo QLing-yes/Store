@@ -1,18 +1,14 @@
 <template>
-	<Q-layout class="Qlayout" :css="Qlayout" :statusbar_color="isNav[current]">
+	<Q-layout pclass="Qlayout" :statusbar_color="isNav[current]">
 		<template v-slot:header>
-			<myNav v-if="!isNav[current]"></myNav>
-			<view v-if="current == 2">
-				
-			</view>
+			<navHead_1 v-if="!isNav[current]"></navHead_1>
+			<navHead_2 v-if="current == 2"></navHead_2>
 		</template>
 
 		<view class="swiper">
 			<view class="swiper_item" :style="swiperItem"><Home></Home></view>
 			<view class="swiper_item" :style="swiperItem"><discover></discover></view>
-			<view class="swiper_item" :style="swiperItem">
-				<notice></notice>
-			</view>
+			<view class="swiper_item" :style="swiperItem"><notice></notice></view>
 			<view class="swiper_item" :style="swiperItem"><cart-list></cart-list></view>
 			<view class="swiper_item" :style="swiperItem + 'background-color: #ffffff;'"><personal></personal></view>
 		</view>
@@ -25,18 +21,22 @@
 
 <script>
 import { tabBar } from '@/common/configure.json';
-import myNav from './components/nav.vue';
+import navHead_1 from './components/navHead-1.vue';
+import navHead_2 from './components/navHead-2.vue';
 import mytabBar from './components/tabBar.vue';
 export default {
-	components: { myNav, mytabBar },
+	options: {
+		styleIsolation: 'shared'
+	},
+	components: { navHead_1, navHead_2, mytabBar },
 	mixins: [],
 	data() {
 		return {
 			current: 2,
-			isNav: { 
-				2: '#fff' ,
-				4: '#fff' ,
-				},
+			isNav: {
+				2: '#fff',
+				4: '#fff'
+			},
 			Page: tabBar
 		};
 	},
@@ -56,11 +56,6 @@ export default {
 			//#endif
 			//#ifndef H5
 			return `width: 750rpx;transform: translateX(-${750 * this.current}rpx);`;
-			//#endif
-		},
-		Qlayout() {
-			//#ifdef MP
-			return 'height: 100vh;background-color: #eeeff4;';
 			//#endif
 		}
 	}

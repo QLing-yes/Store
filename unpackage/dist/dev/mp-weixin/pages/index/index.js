@@ -230,10 +230,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
 var _configure = __webpack_require__(/*! @/common/configure.json */ 24); //
 //
 //
@@ -288,11 +284,7 @@ var _configure = __webpack_require__(/*! @/common/configure.json */ 24); //
 //
 //
 //
-//
-//
-//
-//
-var myNav = function myNav() {__webpack_require__.e(/*! require.ensure | pages/index/components/nav */ "pages/index/components/nav").then((function () {return resolve(__webpack_require__(/*! ./components/nav.vue */ 91));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var mytabBar = function mytabBar() {__webpack_require__.e(/*! require.ensure | pages/index/components/tabBar */ "pages/index/components/tabBar").then((function () {return resolve(__webpack_require__(/*! ./components/tabBar.vue */ 98));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { myNav: myNav, mytabBar: mytabBar }, mixins: [], data: function data() {return { current: 2, isNav: { 2: '#fff', 4: '#fff' }, Page: _configure.tabBar };}, onLoad: function onLoad() {}, onReady: function onReady() {}, methods: { nav: function nav() {uni.navigateTo({ url: '../../pages/cart/cart' });} }, computed: { swiperItem: function swiperItem() {return "width: 750rpx;transform: translateX(-".concat(750 * this.current, "rpx);");}, Qlayout: function Qlayout() {return 'height: 100vh;background-color: #eeeff4;';} } };exports.default = _default;
+var navHead_1 = function navHead_1() {__webpack_require__.e(/*! require.ensure | pages/index/components/navHead-1 */ "pages/index/components/navHead-1").then((function () {return resolve(__webpack_require__(/*! ./components/navHead-1.vue */ 91));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var navHead_2 = function navHead_2() {__webpack_require__.e(/*! require.ensure | pages/index/components/navHead-2 */ "pages/index/components/navHead-2").then((function () {return resolve(__webpack_require__(/*! ./components/navHead-2.vue */ 98));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var mytabBar = function mytabBar() {__webpack_require__.e(/*! require.ensure | pages/index/components/tabBar */ "pages/index/components/tabBar").then((function () {return resolve(__webpack_require__(/*! ./components/tabBar.vue */ 105));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { options: { styleIsolation: 'shared' }, components: { navHead_1: navHead_1, navHead_2: navHead_2, mytabBar: mytabBar }, mixins: [], data: function data() {return { current: 2, isNav: { 2: '#fff', 4: '#fff' }, Page: _configure.tabBar };}, onLoad: function onLoad() {}, onReady: function onReady() {}, methods: { nav: function nav() {uni.navigateTo({ url: '../../pages/cart/cart' });} }, computed: { swiperItem: function swiperItem() {return "width: 750rpx;transform: translateX(-".concat(750 * this.current, "rpx);");} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

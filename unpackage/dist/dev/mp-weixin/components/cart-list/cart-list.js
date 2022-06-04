@@ -83,10 +83,10 @@ try {
       return __webpack_require__.e(/*! import() | Q-UI/Q-layout/Q-layout */ "Q-UI/Q-layout/Q-layout").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-layout/Q-layout.vue */ 49))
     },
     QCell: function() {
-      return __webpack_require__.e(/*! import() | Q-UI/Q-cell/Q-cell */ "Q-UI/Q-cell/Q-cell").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-cell/Q-cell.vue */ 119))
+      return __webpack_require__.e(/*! import() | Q-UI/Q-cell/Q-cell */ "Q-UI/Q-cell/Q-cell").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-cell/Q-cell.vue */ 126))
     },
     card2: function() {
-      return __webpack_require__.e(/*! import() | components/card-2/card-2 */ "components/card-2/card-2").then(__webpack_require__.bind(null, /*! @/components/card-2/card-2.vue */ 124))
+      return __webpack_require__.e(/*! import() | components/card-2/card-2 */ "components/card-2/card-2").then(__webpack_require__.bind(null, /*! @/components/card-2/card-2.vue */ 131))
     }
   }
 } catch (e) {

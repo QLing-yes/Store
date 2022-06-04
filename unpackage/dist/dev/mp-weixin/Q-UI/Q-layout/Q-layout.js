@@ -135,8 +135,10 @@ var _default =
 {
   props: {
     //用于在微信小程序该组件在最外层时样式绑定失效修复
-    css: {
-      type: String,
+    pstyle: {
+      default: '' },
+
+    pclass: {
       default: '' },
 
     statusbar: {

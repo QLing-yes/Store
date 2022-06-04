@@ -6,7 +6,8 @@
     "notice": "/components/notice/notice",
     "cart-list": "/components/cart-list/cart-list",
     "personal": "/components/personal/personal",
-    "my-nav": "/pages/index/components/nav",
+    "nav-head_1": "/pages/index/components/navHead-1",
+    "nav-head_2": "/pages/index/components/navHead-2",
     "mytab-bar": "/pages/index/components/tabBar"
   }
 }
