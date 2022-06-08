@@ -1,13 +1,12 @@
 <template>
 	<list>
 		<Q-cell>
+			<Q-drag></Q-drag>
 			<view class="title">
 				<text class="text">Most Popular</text>
 				<text class="icon">&#xe60a;</text>
 			</view>
-			<scroll-view class="content" :scroll-x="true" show-scrollbar="false">
-				<card-1 :bj="img2[i % 2]" :src="img[i % 2]" v-for="(item, i) in 20"></card-1>
-			</scroll-view>
+			<scroll-view class="content" :scroll-x="true" show-scrollbar="false"><card-1 :bj="img2[i % 2]" :src="img[i % 2]" v-for="(item, i) in 20"></card-1></scroll-view>
 		</Q-cell>
 		<Q-cell>
 			<view class="title" style="margin-bottom: 60rpx;">
@@ -32,9 +31,7 @@ export default {
 	},
 	onLoad() {},
 	onReady() {},
-	methods: {
-
-	},
+	methods: {},
 	computed: {}
 };
 </script>

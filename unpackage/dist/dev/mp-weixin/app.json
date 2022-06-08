@@ -13,5 +13,9 @@
     "navigationStyle": "custom",
     "pageOrientation": "portrait"
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "list": "/Q-UI/common/view",
+    "header": "/Q-UI/common/view",
+    "waterfall": "/Q-UI/common/view"
+  }
 }

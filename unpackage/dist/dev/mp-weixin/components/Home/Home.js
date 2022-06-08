@@ -82,8 +82,11 @@ try {
     QCell: function() {
       return __webpack_require__.e(/*! import() | Q-UI/Q-cell/Q-cell */ "Q-UI/Q-cell/Q-cell").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-cell/Q-cell.vue */ 126))
     },
+    QDrag: function() {
+      return __webpack_require__.e(/*! import() | Q-UI/Q-drag/Q-drag */ "Q-UI/Q-drag/Q-drag").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-drag/Q-drag.vue */ 138))
+    },
     card1: function() {
-      return __webpack_require__.e(/*! import() | components/card-1/card-1 */ "components/card-1/card-1").then(__webpack_require__.bind(null, /*! @/components/card-1/card-1.vue */ 138))
+      return __webpack_require__.e(/*! import() | components/card-1/card-1 */ "components/card-1/card-1").then(__webpack_require__.bind(null, /*! @/components/card-1/card-1.vue */ 147))
     }
   }
 } catch (e) {
@@ -162,7 +165,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
 var _default =
 {
   data: function data() {
@@ -175,8 +177,6 @@ var _default =
   onLoad: function onLoad() {},
   onReady: function onReady() {},
   methods: {},
-
-
   computed: {} };exports.default = _default;
 
 /***/ }),

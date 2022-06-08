@@ -35,7 +35,7 @@ import { QueryAll } from '@/Q-UI/common/public.js';
 export default {
 	//#ifdef MP
 	options: {
-		styleIsolation: 'shared'
+		styleIsolation: 'page-shared'
 	},
 	//#endif
 	data() {

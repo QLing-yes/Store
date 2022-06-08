@@ -1,8 +1,15 @@
 import App from './App'
-import {
-	_component
-} from "@/Q-UI/common/public.js"
-
+//#ifndef APP-PLUS
+import v from './Q-UI/common/view.vue'
+//#endif
+function _component(app) {
+	//#ifndef APP-PLUS
+	app.component('list', v);
+	// app.component('cell', v);
+	app.component('header', v);
+	app.component('waterfall', v);
+	//#endif
+}
 
 // #ifndef VUE3
 import Vue from 'vue'

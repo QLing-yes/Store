@@ -17,6 +17,9 @@
 </template>
 
 <script>
+//#ifdef APP-PLUS
+const dom = weex.requireModule('dom');
+//#endif
 import { QueryAll, Query } from '../common/public.js';
 let left = 0;
 export default {
@@ -56,10 +59,15 @@ export default {
 		//#endif
 	},
 	methods: {
-		async init(){
+		async init() {
 			let l = await Query.call(this, 'scroll-view');
 			left = l.left;
+			//#ifndef MP
 			this.el_label = await QueryAll.call(this.$parent.$parent, this.label_name, this.$refs.category);
+		//#endif
+			//#ifdef MP
+			this.el_label = await QueryAll.call(this.$parent.$parent.$parent, this.label_name, this.$refs.category);
+		//#endif
 		}
 	},
 	computed: {

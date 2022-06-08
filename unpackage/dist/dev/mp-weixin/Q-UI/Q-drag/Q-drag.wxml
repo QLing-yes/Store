@@ -1,0 +1,2 @@
+<wxs src="../common/wxs/drag.wxs" module="drag"></wxs>
+<view data-ref="b" class="test wxsDrag vue-ref" bindtouchstart="{{drag.init}}" bindtouchmove="{{drag.touchmove}}"><view class="wxsDrag"></view></view>

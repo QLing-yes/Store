@@ -8,16 +8,11 @@
 </template>
 <script>
 export default {
-	props: {
-		pclass: {
-			type: String,
-			default: ''
-		},
-		pstyle: {
-			type: String,
-			default: ''
-		}
+	props:['pclass','pstyle'],
+	//#ifdef MP
+	options: {
+		styleIsolation: 'apply-shared'
 	},
-	// props:['pclass','pstyle']
+	//#endif
 };
 </script>

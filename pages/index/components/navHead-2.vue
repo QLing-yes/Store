@@ -7,7 +7,9 @@
 		<!-- #endif -->
 		<text class="icon but">&#xe603;</text>
 		<text class="icon but">&#xe635;</text>
-		<text class="icon but" @click="Popup">&#xe632;</text>
+		<view style="position: relative;">
+			<text class="icon but" @click="Popup">&#xe632;</text>
+		</view>
 		<!-- #ifdef MP -->
 		<text class="icon read">&#xe65f;清除未读</text>
 		<!-- #endif -->

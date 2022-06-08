@@ -1,1 +1,0 @@
-<view class="{{['popup '+pclass]}}" style="{{('padding-top:'+bar+'px;'+pstyle)}}"><slot></slot></view>

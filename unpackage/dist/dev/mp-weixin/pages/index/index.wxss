@@ -59,6 +59,7 @@ button {
 .swiper_item {
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: inherit;
+  overflow-x: inherit;
 }
 

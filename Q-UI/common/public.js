@@ -1,9 +1,21 @@
-//#ifdef APP-PLUS
-const dom = weex.requireModule('dom');
-//#endif
-//#ifndef APP-PLUS
-import v from './view.vue'
-//#endif
+/**
+ * 元素添加事件或修改代理
+ * @param {object} ref 
+ * @param {string} EventName 
+ * @param {Function?} handler 
+ */
+export function addEvent(ref,EventName,handler) {
+	if (!ref.event[EventName])ref.addEvent(EventName);
+	ref.event.touchstart.handler = () => {
+		// #ifdef VUE3
+		ref._vei?.onDisappear();
+		//#endif
+		//#ifndef VUE3
+		ref.data?.on?.disappear();
+		//#endif
+		if(typeof handler == "function")handler();
+	};
+}
 
 /** 小程序胶囊位置*/
 export function MP_Menu() {
@@ -16,11 +28,12 @@ export function MP_Menu() {
 	//#endif
 }
 /**
- * 元素边框信息查询
- * Query.cell(this)
+ * 元素边框信息查询;
+ * Query.cell;
  * @param {className & refName} e 
+ * @param {weexDom} dom
  */
-export function Query(e) {
+export function Query(e,dom) {
 	return new Promise((resolve, reject) => {
 		//#ifndef APP-PLUS
 		uni.createSelectorQuery().in(this).select('.' + e)
@@ -38,12 +51,14 @@ export function Query(e) {
 }
 
 /**
- * app查询所有ref直接子节点为参数一的边框信息;
- * 其他端查询所有为参数一的边框信息;
+ * QueryAll.cell;
+ * app查询所有ref直接子节点为"参数一"的边框信息;
+ * 其他端查询所有为"参数一"的边框信息;
  * @param {className} name 
  * @param {refObj} ref 
+ * @param {weexDom} dom
  */
-export function QueryAll(name, ref) {
+export function QueryAll(name, ref,dom) {
 	return new Promise((resolve, reject) => {
 		//#ifndef APP-PLUS
 		uni
@@ -78,17 +93,4 @@ export function QueryAll(name, ref) {
 		}
 		//#endif
 	})
-}
-
-/**
- * 覆盖组件
- * @param {createSSRApp} app 
- */
-export function _component(app) {
-	//#ifndef APP-PLUS
-	app.component('list', v);
-	// app.component('cell', v);
-	app.component('header', v);
-	app.component('waterfall', v);
-	//#endif
 }

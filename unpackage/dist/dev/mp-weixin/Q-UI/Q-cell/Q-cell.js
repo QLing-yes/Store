@@ -122,18 +122,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 var _default =
 {
-  props: {
-    pclass: {
-      type: String,
-      default: '' },
+  props: ['pclass', 'pstyle'],
 
-    pstyle: {
-      type: String,
-      default: '' } }
-
-
-  // props:['pclass','pstyle']
-};exports.default = _default;
+  options: {
+    styleIsolation: 'apply-shared' } };exports.default = _default;
 
 /***/ })
 

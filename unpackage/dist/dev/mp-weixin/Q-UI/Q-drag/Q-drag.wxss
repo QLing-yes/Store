@@ -12,12 +12,13 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.popup {
-  position: fixed;
-  background-color: #dee2e6;
-  top: 0rpx;
-  bottom: 0rpx;
-  left: 0rpx;
-  right: 0rpx;
+.test {
+  position: relative;
+  margin-left: 100rpx;
+  height: 100rpx;
+  width: 100rpx;
+  background-color: cornflowerblue;
+  justify-content: center;
+  align-items: center;
 }
 

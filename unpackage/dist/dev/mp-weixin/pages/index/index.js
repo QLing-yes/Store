@@ -9,7 +9,7 @@
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 5);
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 3));
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 4));
 var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.nvue */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
 createPage(_index.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
@@ -284,7 +284,10 @@ var _configure = __webpack_require__(/*! @/common/configure.json */ 24); //
 //
 //
 //
-var navHead_1 = function navHead_1() {__webpack_require__.e(/*! require.ensure | pages/index/components/navHead-1 */ "pages/index/components/navHead-1").then((function () {return resolve(__webpack_require__(/*! ./components/navHead-1.vue */ 91));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var navHead_2 = function navHead_2() {__webpack_require__.e(/*! require.ensure | pages/index/components/navHead-2 */ "pages/index/components/navHead-2").then((function () {return resolve(__webpack_require__(/*! ./components/navHead-2.vue */ 98));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var mytabBar = function mytabBar() {__webpack_require__.e(/*! require.ensure | pages/index/components/tabBar */ "pages/index/components/tabBar").then((function () {return resolve(__webpack_require__(/*! ./components/tabBar.vue */ 105));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { options: { styleIsolation: 'shared' }, components: { navHead_1: navHead_1, navHead_2: navHead_2, mytabBar: mytabBar }, mixins: [], data: function data() {return { current: 2, isNav: { 2: '#fff', 4: '#fff' }, Page: _configure.tabBar };}, onLoad: function onLoad() {}, onReady: function onReady() {}, methods: { nav: function nav() {uni.navigateTo({ url: '../../pages/cart/cart' });} }, computed: { swiperItem: function swiperItem() {return "width: 750rpx;transform: translateX(-".concat(750 * this.current, "rpx);");} } };exports.default = _default;
+var navHead_1 = function navHead_1() {__webpack_require__.e(/*! require.ensure | pages/index/components/navHead-1 */ "pages/index/components/navHead-1").then((function () {return resolve(__webpack_require__(/*! ./components/navHead-1.vue */ 91));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var navHead_2 = function navHead_2() {__webpack_require__.e(/*! require.ensure | pages/index/components/navHead-2 */ "pages/index/components/navHead-2").then((function () {return resolve(__webpack_require__(/*! ./components/navHead-2.vue */ 98));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var mytabBar = function mytabBar() {__webpack_require__.e(/*! require.ensure | pages/index/components/tabBar */ "pages/index/components/tabBar").then((function () {return resolve(__webpack_require__(/*! ./components/tabBar.vue */ 105));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { // options: {
+  // styleIsolation: 'shared'
+  // },
+  components: { navHead_1: navHead_1, navHead_2: navHead_2, mytabBar: mytabBar }, mixins: [], data: function data() {return { current: 0, isNav: { 2: '#fff', 4: '#fff' }, Page: _configure.tabBar };}, onLoad: function onLoad() {}, onReady: function onReady() {}, methods: { nav: function nav() {uni.navigateTo({ url: '../../pages/cart/cart' });} }, computed: { swiperItem: function swiperItem() {return "width: 750rpx;transform: translateX(-".concat(750 * this.current, "rpx);");} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

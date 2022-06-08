@@ -25,14 +25,14 @@ import navHead_1 from './components/navHead-1.vue';
 import navHead_2 from './components/navHead-2.vue';
 import mytabBar from './components/tabBar.vue';
 export default {
-	options: {
-		styleIsolation: 'shared'
-	},
+	// options: {
+		// styleIsolation: 'shared'
+	// },
 	components: { navHead_1, navHead_2, mytabBar },
 	mixins: [],
 	data() {
 		return {
-			current: 2,
+			current: 0,
 			isNav: {
 				2: '#fff',
 				4: '#fff'
@@ -82,7 +82,8 @@ export default {
 	display: flex;
 	flex-direction: column;
 	//#ifndef APP-PLUS
-	overflow-y: scroll;
+	overflow-y: inherit;
+	overflow-x: inherit;
 	//#endif
 }
 </style>

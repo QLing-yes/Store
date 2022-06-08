@@ -1,22 +1,16 @@
 function Foo(el, binding, vnode) {
-	console.log(binding);
-	//height
-	// let a = window.getComputedStyle(el, null).getPropertyValue("height");
-	// el.style.height = a;
-	// console.log(a);
-	// el.style.cssText = `height: ${a};`;
-	// console.log(vnode);
+
 }
 // #ifndef VUE3
 export default {
 	// 指令第一次绑定到元素时调用
-	// bind: Foo,
+	// bind: ,
 	// 被绑定元素插入父节点时调用。
-	inserted: Foo,
+	// inserted: ,
 	// 所在组件的 VNode 更新时调用
-	// update: u,
+	// update: ,
 	//当前和子VNode全部更新后调用
-	// componentUpdated:u,
+	// componentUpdated:,
 	//指令解绑时调用。
 	// unbind() {}
 }

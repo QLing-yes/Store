@@ -1,8 +1,8 @@
 <template>
-	<view class="tabd">
+	<view :class="'tabd ' + pclass" :style="pstyle">
 		<slot><text>🎨</text></slot>
 		<slot name="tag">
-			<text v-if="n != '0'" class="default">{{ n }}</text>
+			<text v-if="n != '0'" :class="'default ' + tag">{{ n }}</text>
 		</slot>
 	</view>
 </template>
@@ -10,6 +10,15 @@
 <script>
 export default {
 	props: {
+		pclass: {
+			default: ''
+		},
+		pstyle: {
+			default: ''
+		},
+		tag: {
+			default: ''
+		},
 		n: {
 			type: String,
 			default: '0'

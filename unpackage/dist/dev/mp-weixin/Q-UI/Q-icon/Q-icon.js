@@ -126,6 +126,15 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _default =
 {
   props: {
+    pclass: {
+      default: '' },
+
+    pstyle: {
+      default: '' },
+
+    tag: {
+      default: '' },
+
     n: {
       type: String,
       default: '0' } } };exports.default = _default;
