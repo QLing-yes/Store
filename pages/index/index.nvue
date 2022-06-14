@@ -26,13 +26,13 @@ import navHead_2 from './components/navHead-2.vue';
 import mytabBar from './components/tabBar.vue';
 export default {
 	// options: {
-		// styleIsolation: 'shared'
+	// styleIsolation: 'shared'
 	// },
 	components: { navHead_1, navHead_2, mytabBar },
 	mixins: [],
 	data() {
 		return {
-			current: 0,
+			current: 2,
 			isNav: {
 				2: '#fff',
 				4: '#fff'
@@ -52,7 +52,7 @@ export default {
 	computed: {
 		swiperItem() {
 			//#ifdef H5
-			return `width: 100vw;transform: translateX(-${100 * this.current}vw);`;
+			return `width: 100%;transform: translateX(-${100 * this.current}%);`;
 			//#endif
 			//#ifndef H5
 			return `width: 750rpx;transform: translateX(-${750 * this.current}rpx);`;
@@ -69,6 +69,17 @@ export default {
 	height: 100vh;
 	//#endif
 }
+//#ifdef H5
+@media screen and (min-width: 992px) {
+	.Qlayout {
+		max-width: 992px;
+		margin: 0 auto;
+	}
+	.swiper_item{
+		max-width: 992px;
+	}
+}
+//#endif
 .swiper {
 	display: flex;
 	flex-direction: row;

@@ -1,10 +1,8 @@
 <template>
-	<view :class="'content '+pclass" :style="pstyle">
+	<view :class="'content ' + pclass" :style="pstyle">
 		<view class="sticky">
 			<!-- 状态栏 -->
-			<view v-if="statusbar" :style="'height:' + StatusbarHeight + 'px;' + 'background-color:' + statusbar_color + ';'">
-				<slot name="statusbar"></slot>
-			</view>
+			<view v-if="statusbar" :style="'height:' + StatusbarHeight + 'px;' + 'background-color:' + statusbar_color + ';'"><slot name="statusbar"></slot></view>
 			<!-- Header -->
 			<slot name="header"></slot>
 		</view>
@@ -17,6 +15,11 @@
 
 <script>
 export default {
+	data() {
+		return {
+			StatusbarHeight: uni.getSystemInfoSync().statusBarHeight
+		};
+	},
 	props: {
 		//用于在微信小程序该组件在最外层时样式绑定失效修复
 		pstyle: {
@@ -34,12 +37,12 @@ export default {
 			default: ''
 		}
 	},
-	computed: {
+	// computed: {
 		//状态栏高度
-		StatusbarHeight() {
-			return uni.getSystemInfoSync().statusBarHeight;
-		}
-	}
+		// StatusbarHeight() {
+		// 	return uni.getSystemInfoSync().statusBarHeight;
+		// }
+	// }
 };
 </script>
 

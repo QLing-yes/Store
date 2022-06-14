@@ -17,10 +17,7 @@
 </template>
 
 <script>
-//#ifdef APP-PLUS
-const dom = weex.requireModule('dom');
-//#endif
-import { QueryAll, Query } from '../common/public.js';
+import { QueryAll, Query } from '../common/Tools.js';
 let left = 0;
 export default {
 	data() {

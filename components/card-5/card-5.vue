@@ -18,9 +18,8 @@ export default {
 			type: Array,
 			default: () => ['content', 1654077736723]
 		},
-		n: {
-			type: String,
-			default: '0'
+		mark: {
+			default: false
 		}
 	},
 	computed: {
@@ -46,9 +45,10 @@ export default {
 
 <template>
 	<view class="card5 pclass" :class="pclass">
-		<!-- <Q-icon :n="n" pclass="img" tag="tag"> -->
-		<view class="img"></view>
-		<!-- </Q-icon> -->
+		<view style="position: relative;">
+			<view class="img"></view>
+			<text :class="mark ? 'j' : ''"></text>
+		</view>
 
 		<view class="txtBox">
 			<view class="box">
@@ -71,23 +71,34 @@ export default {
 	height: 100rpx;
 	border-radius: 50rpx;
 	background-color: #e7f5ff;
-	margin-right: 20rpx;
+}
+.j {
+	position: absolute;
+	right: 0rpx;
+	$r: 12rpx;
+	width: $r;
+	height: $r;
+	border-radius: $r;
+	background-color: #eb5a80;
 }
 .txtBox {
+	margin-left: 20rpx;
 	flex: 1;
 	justify-content: space-around;
 	.box {
 		flex-direction: row;
 		justify-content: space-between;
 		.head {
-			font-weight: 600;
+			// font-weight: 600;
 		}
 		.date {
-			font-size: 15rpx;
+			font-size: 25rpx;
+			color: #ccd2d8;
 		}
 	}
 	.content {
 		font-size: 25rpx;
+		color: #adb5bd;
 	}
 }
 </style>

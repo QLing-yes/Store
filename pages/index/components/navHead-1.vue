@@ -1,7 +1,9 @@
 <template>
 	<navigation class="navigation">
 		<template v-slot:left>
-			<Q-icon n="9" class="tab"><text class="icon">&#xe607;</text></Q-icon>
+			<Q-icon n="9" class="tab">
+			<text class="icon tab">&#xe607;</text>
+			</Q-icon>
 			<!-- #ifdef MP -->
 			<Q-icon n="9" class="tab"><text class="icon">&#xe608;</text></Q-icon>
 			<!-- #endif -->
@@ -23,6 +25,8 @@ export default {
 	},
 	onLoad() {},
 	onReady() {},
+	mounted() {
+	},
 	methods: {
 		nav() {
 			uni.navigateTo({

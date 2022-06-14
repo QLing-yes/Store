@@ -48,7 +48,9 @@ export default {
 }
 // #ifdef H5
 ::-webkit-scrollbar {
-	width: 0 !important;
+	width: 0px !important;
+	height: 10px !important;
+	background-color: aquamarine;
 	display: none;
 }
 // #endif

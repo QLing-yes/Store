@@ -1,5 +1,7 @@
+<!-- //这个不实要, 准备废弃 -->
 <template>
 	<view :class="'tabd ' + pclass" :style="pstyle">
+		<!-- 角标 -->
 		<slot><text>🎨</text></slot>
 		<slot name="tag">
 			<text v-if="n != '0'" :class="'default ' + tag">{{ n }}</text>

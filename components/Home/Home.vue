@@ -1,7 +1,6 @@
 <template>
 	<list>
 		<Q-cell>
-			<Q-drag></Q-drag>
 			<view class="title">
 				<text class="text">Most Popular</text>
 				<text class="icon">&#xe60a;</text>

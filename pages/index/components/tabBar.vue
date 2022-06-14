@@ -1,15 +1,7 @@
 <template>
 	<view class="content">
 		<Q-icon n="9" v-for="(item, i) in tabs" :key="item.pagePath">
-			<text
-				@click="
-					$emit('current', i);
-				"
-				class="tab icon"
-				:style="'width:' + 750 / (tabs.length + 1) + 'rpx;'"
-			>
-				{{ item[current == i ? 'selectedIconPath' : 'iconPath'] }}
-			</text>
+			<text @click="$emit('current', i)" class="tab icon" :style="'width:' + 750 / (tabs.length + 1) + 'rpx;'">{{ item[current == i ? 'selectedIconPath' : 'iconPath'] }}</text>
 		</Q-icon>
 	</view>
 </template>
@@ -28,7 +20,9 @@ export default {
 			default: 0
 		}
 	},
-	mounted() {},
+	mounted() {
+
+	},
 	methods: {},
 	computed: {}
 };

@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { QueryAll } from '@/Q-UI/common/public.js';
+import { QueryAll } from '@/Q-UI/common/Tools.js';
 export default {
 	//#ifdef MP
 	options: {

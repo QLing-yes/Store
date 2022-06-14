@@ -1,20 +1,44 @@
+//#ifdef APP-PLUS
+export const dom = weex.requireModule('dom');
+//#endif
 /**
- * 元素添加事件或修改代理
+ * 元素添加事件或handler
  * @param {object} ref 
  * @param {string} EventName 
  * @param {Function?} handler 
+ * @return {Number} //返回当前handler的Flow位置
  */
-export function addEvent(ref,EventName,handler) {
-	if (!ref.event[EventName])ref.addEvent(EventName);
-	ref.event.touchstart.handler = () => {
-		// #ifdef VUE3
-		ref._vei?.onDisappear();
-		//#endif
-		//#ifndef VUE3
-		ref.data?.on?.disappear();
-		//#endif
-		if(typeof handler == "function")handler();
-	};
+export function addEvent(ref, EventName, handler) {
+	ref = ref.ref ? ref : ref.$el;
+	const Flow = EventName + "HandlerFlow";
+	const P = EventName + "Proxy";
+	let event = ref.event[EventName];
+
+	if (!Array.isArray(ref[Flow])) ref[Flow] = [];
+	if (handler instanceof Function) ref[Flow].push(handler);
+
+	function foo() {
+		ref[Flow].forEach(f => f());
+	}
+
+	if (!event) {
+		ref.addEvent(EventName);
+		event = ref.event[EventName];
+		event.handler = foo;
+		ref[P] = true;
+	} else if (!ref[P]) {
+		ref.event[EventName] = new Proxy(ref.event[EventName], {
+			get(o, k) {
+				if (k == 'handler') foo();
+				return o[k];
+			},
+			set(o, k, v) {
+				o[k] = v;
+			}
+		});
+		ref[P] = true;
+	}
+	return ref[Flow].length - 1;
 }
 
 /** 小程序胶囊位置*/
@@ -31,9 +55,8 @@ export function MP_Menu() {
  * 元素边框信息查询;
  * Query.cell;
  * @param {className & refName} e 
- * @param {weexDom} dom
  */
-export function Query(e,dom) {
+export function Query(e) {
 	return new Promise((resolve, reject) => {
 		//#ifndef APP-PLUS
 		uni.createSelectorQuery().in(this).select('.' + e)
@@ -56,9 +79,8 @@ export function Query(e,dom) {
  * 其他端查询所有为"参数一"的边框信息;
  * @param {className} name 
  * @param {refObj} ref 
- * @param {weexDom} dom
  */
-export function QueryAll(name, ref,dom) {
+export function QueryAll(name, ref) {
 	return new Promise((resolve, reject) => {
 		//#ifndef APP-PLUS
 		uni
@@ -70,7 +92,7 @@ export function QueryAll(name, ref,dom) {
 			})
 			.exec();
 		//#endif
-		
+
 		//#ifdef APP-PLUS
 		let data = [];
 		if (ref.classList.includes(name)) {

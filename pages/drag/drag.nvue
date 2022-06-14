@@ -1,0 +1,31 @@
+<template>
+	<div class="container">
+		<Q-dragView>
+			<text>移动</text>
+			<div ref="main_btn" class="btn"></div>
+		</Q-dragView>
+	</div>
+</template>
+<script>
+module.exports = {
+	data() {
+		return {};
+	},
+	mounted() {},
+	methods: {}
+};
+</script>
+<style>
+.container {
+	flex: 1;
+	background-color: antiquewhite;
+	align-items: center;
+	justify-content: center;
+}
+.btn {
+	width: 100px;
+	height: 100px;
+	background-color: #ff0000;
+	border-radius: 10rpx;
+}
+</style>
