@@ -1,0 +1,1 @@
+<view class="tab"><text class="icon">{{icon}}</text><q-drag-view vue-id="1a631136-1" pclass="drag" bind:__l="__l" vue-slots="{{['default']}}"><text class="mark">{{n}}</text></q-drag-view></view>

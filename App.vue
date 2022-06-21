@@ -47,11 +47,14 @@ export default {
 	font-family: iconfont2;
 }
 // #ifdef H5
-::-webkit-scrollbar {
-	width: 0px !important;
-	height: 10px !important;
-	background-color: aquamarine;
-	display: none;
+::-webkit-scrollbar{
+	// width: 8rpx;
+	width: 0rpx;
+	height: 15rpx;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 5rpx;
+	background-color: #c7deec;
 }
 // #endif
 </style>

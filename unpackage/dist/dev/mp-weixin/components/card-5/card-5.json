@@ -1,6 +1,4 @@
 {
-  "usingComponents": {
-    "q-icon": "/Q-UI/Q-icon/Q-icon"
-  },
+  "usingComponents": {},
   "component": true
 }

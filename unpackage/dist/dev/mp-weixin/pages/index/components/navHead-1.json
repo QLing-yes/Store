@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "navigation": "/components/navigation/navigation",
-    "q-icon": "/Q-UI/Q-icon/Q-icon"
+    "drag-mask": "/components/drag-mask/drag-mask",
+    "q-drag-view": "/Q-UI/Q-dragView/Q-dragView"
   },
   "component": true
 }

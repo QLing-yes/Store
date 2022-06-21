@@ -12,11 +12,8 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.ba {
-  background-color: aquamarine;
-}
 .line {
-  width: 160rpx;
+  width: 120rpx;
   height: 2rpx;
   background-color: #fff;
 }

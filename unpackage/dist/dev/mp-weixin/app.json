@@ -1,22 +1,21 @@
 {
-   "pages": [
-      "pages/index/index",
-      "pages/cart/cart",
-      "pages/details/details"
-   ],
-   "subPackages": [],
-   "window": {
-      "navigationBarTextStyle": "black",
-      "navigationBarTitleText": "",
-      "navigationBarBackgroundColor": "#F8F8F8",
-      "backgroundColor": "#F8F8F8",
-      "navigationStyle": "custom",
-      "pageOrientation": "portrait"
-   },
-   "usingComponents": {
-      "list": "/Q-UI/common/view",
-      "header": "/Q-UI/common/view",
-      "waterfall": "/Q-UI/common/view"
-   },
-   "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/details/details"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom",
+    "pageOrientation": "portrait"
+  },
+  "usingComponents": {
+    "list": "/Q-UI/common/view",
+    "header": "/Q-UI/common/view",
+    "waterfall": "/Q-UI/common/view"
+  }
 }

@@ -49,7 +49,6 @@
   height: 80rpx;
   border-radius: 20rpx;
   margin: 20rpx;
-  line-height: 80rpx;
   text-align: center;
   display: flex;
   justify-content: center;

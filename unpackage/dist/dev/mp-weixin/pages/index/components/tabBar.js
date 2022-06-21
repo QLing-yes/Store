@@ -146,31 +146,24 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+var _configure = __webpack_require__(/*! @/common/configure.json */ 18); //
+//
+//
+//
+//
+//
+//
+//
+var _default = { data: function data() {return { tabs: _configure.tabBar };}, props: { current: {
+      type: Number,
+      default: 0 } },
 
 
+  mounted: function mounted() {
 
-
-
-
-
-
-var _configure = __webpack_require__(/*! @/common/configure.json */ 24); //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default = { data: function data() {return { tabs: _configure.tabBar };}, props: { current: { type: Number, default: 0 } }, mounted: function mounted() {}, methods: {}, computed: {} };exports.default = _default;
+  },
+  methods: {},
+  computed: {} };exports.default = _default;
 
 /***/ }),
 

@@ -12,14 +12,6 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.navigation > view :nth-of-type(1) {
-  flex-direction: row;
-}
-.title {
-  font-weight: 600;
-  font-size: 36rpx;
-  text-align: center;
-}
 .tab {
   width: 80rpx;
   height: 80rpx;

@@ -34,9 +34,8 @@ class Preset_1 {
 			translateX,
 			translateY
 		} = this.getStyle();
-
-		this.refObj.myX = translateX;
-		this.refObj.myY = translateY;
+		this.refObj.myX = Math.round(translateX);
+		this.refObj.myY = Math.round(translateY);
 	}
 	//解绑
 	unbind() {
@@ -146,14 +145,16 @@ function getEl(el) {
  * @param {number} duration //持续时间
  * @param {Drag} drag
  * @param {Timing} timing
+ * @param {Function} foo //回调函数 
  */
-export function bounce(e, range, duration, drag, timing) {
+export function bounce(e, range, duration, drag, timing, foo) {
 	let {
 		state,
 		deltaY,
 		deltaX
 	} = e;
 	if (state != 'start') {
+
 		if (Math.max(...[Math.abs(deltaY), Math.abs(deltaX)]) < range) {
 			drag.unbind();
 			let {
@@ -167,11 +168,17 @@ export function bounce(e, range, duration, drag, timing) {
 				animation: 'easeOutElastic',
 				// cubicBezier: ',1,-0.81,0,-0.04'
 			};
+
 			timing.updateXY();
 			timing.move(op, e => {
 				// if (e.state == 'exit') drag.move();
 				if (e.state != 'start') drag.move();
 			});
-		} else drag.move();
+
+		} else {
+			if (typeof foo == 'function') foo();
+			drag.move();
+		}
+
 	}
 }

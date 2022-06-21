@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "q-drag-view": "/Q-UI/Q-dragView/Q-dragView"
+  },
+  "component": true
+}

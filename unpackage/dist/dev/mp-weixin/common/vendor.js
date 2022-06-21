@@ -766,8 +766,8 @@ function populateParameters(result) {var _result$brand =
     appVersion: "1.0.0",
     appVersionCode: "100",
     appLanguage: getAppLanguage(hostLanguage),
-    uniCompileVersion: "3.4.14",
-    uniRuntimeVersion: "3.4.14",
+    uniCompileVersion: "3.4.15",
+    uniRuntimeVersion: "3.4.15",
     uniPlatform: undefined || "mp-weixin",
     deviceBrand: deviceBrand,
     deviceModel: model,
@@ -2590,126 +2590,18 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ 12:
-/*!*****************************************************!*\
-  !*** D:/Desktop/uniapp/Store/Q-UI/common/public.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.addEvent = addEvent;exports.MP_Menu = MP_Menu;exports.Query = Query;exports.QueryAll = QueryAll; /**
-                                                                                                                                                                                     * 元素添加事件或修改代理
-                                                                                                                                                                                     * @param {object} ref 
-                                                                                                                                                                                     * @param {string} EventName 
-                                                                                                                                                                                     * @param {Function?} handler 
-                                                                                                                                                                                     */
-function addEvent(ref, EventName, handler) {
-  if (!ref.event[EventName]) ref.addEvent(EventName);
-  ref.event.touchstart.handler = function () {var _ref$data, _ref$data$on;
-
-
-
-
-    (_ref$data = ref.data) === null || _ref$data === void 0 ? void 0 : (_ref$data$on = _ref$data.on) === null || _ref$data$on === void 0 ? void 0 : _ref$data$on.disappear();
-
-    if (typeof handler == "function") handler();
-  };
-}
-
-/** 小程序胶囊位置*/
-function MP_Menu() {
-
-  var u = uni.getMenuButtonBoundingClientRect();
-  return this.mp_menu ? "height: ".concat(u.top > u.height ? u.top : u.height, "px;") : '';
-
-
-
-
-}
-/**
-   * 元素边框信息查询;
-   * Query.cell;
-   * @param {className & refName} e 
-   * @param {weexDom} dom
-   */
-function Query(e, dom) {var _this = this;
-  return new Promise(function (resolve, reject) {
-
-    uni.createSelectorQuery().in(_this).select('.' + e).
-    boundingClientRect(function (data) {
-      resolve(data);
-    }).
-    exec();
-
-
-
-
-
-
-  });
-}
-
-/**
-   * QueryAll.cell;
-   * app查询所有ref直接子节点为"参数一"的边框信息;
-   * 其他端查询所有为"参数一"的边框信息;
-   * @param {className} name 
-   * @param {refObj} ref 
-   * @param {weexDom} dom
-   */
-function QueryAll(name, ref, dom) {var _this2 = this;
-  return new Promise(function (resolve, reject) {
-
-    uni.
-    createSelectorQuery().
-    in(_this2).
-    selectAll('.' + name).
-    boundingClientRect(function (data) {
-      resolve(data);
-    }).
-    exec();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  });
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 159:
+/***/ 150:
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 160);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 151);
 
 /***/ }),
 
-/***/ 160:
+/***/ 151:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -2740,7 +2632,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 161);
+module.exports = __webpack_require__(/*! ./runtime */ 152);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -2757,7 +2649,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 161:
+/***/ 152:
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -3489,7 +3381,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 183:
+/***/ 174:
 /*!***************************************************!*\
   !*** D:/Desktop/uniapp/Store/Q-UI/common/date.js ***!
   \***************************************************/
@@ -3533,6 +3425,17 @@ function getDate() {var o = arguments.length > 0 && arguments[0] !== undefined ?
 
 /***/ }),
 
+/***/ 18:
+/*!*****************************************************!*\
+  !*** D:/Desktop/uniapp/Store/common/configure.json ***!
+  \*****************************************************/
+/*! exports provided: tabBar, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"tabBar\":[{\"pagePath\":\"pages/Home/Home\",\"iconPath\":\"\",\"selectedIconPath\":\"\",\"text\":\"Home\"},{\"pagePath\":\"pages/Search/Search\",\"iconPath\":\"\",\"selectedIconPath\":\"\",\"text\":\"Search\"},{\"pagePath\":\"pages/Chat/Chat\",\"iconPath\":\"\",\"selectedIconPath\":\"\",\"text\":\"Chat\"},{\"pagePath\":\"pages/Bag/Bag\",\"iconPath\":\"\",\"selectedIconPath\":\"\",\"text\":\"Bag\"},{\"pagePath\":\"pages/Profile/Profile\",\"iconPath\":\"\",\"selectedIconPath\":\"\",\"text\":\"Profile\"}]}");
+
+/***/ }),
+
 /***/ 2:
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -3561,17 +3464,6 @@ try {
 
 module.exports = g;
 
-
-/***/ }),
-
-/***/ 24:
-/*!*****************************************************!*\
-  !*** D:/Desktop/uniapp/Store/common/configure.json ***!
-  \*****************************************************/
-/*! exports provided: tabBar, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"tabBar\":[{\"pagePath\":\"pages/Home/Home\",\"iconPath\":\"\",\"selectedIconPath\":\"\",\"text\":\"Home\"},{\"pagePath\":\"pages/Search/Search\",\"iconPath\":\"\",\"selectedIconPath\":\"\",\"text\":\"Search\"},{\"pagePath\":\"pages/Chat/Chat\",\"iconPath\":\"\",\"selectedIconPath\":\"\",\"text\":\"Chat\"},{\"pagePath\":\"pages/Bag/Bag\",\"iconPath\":\"\",\"selectedIconPath\":\"\",\"text\":\"Bag\"},{\"pagePath\":\"pages/Profile/Profile\",\"iconPath\":\"\",\"selectedIconPath\":\"\",\"text\":\"Profile\"}]}");
 
 /***/ }),
 
@@ -10097,6 +9989,136 @@ internalMixin(Vue);
 /***/ (function(module, exports) {
 
 
+
+/***/ }),
+
+/***/ 67:
+/*!****************************************************!*\
+  !*** D:/Desktop/uniapp/Store/Q-UI/common/Tools.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.addEvent = addEvent;exports.MP_Menu = MP_Menu;exports.Query = Query;exports.QueryAll = QueryAll;
+
+
+/**
+                                                                                                                                                                                     * 元素添加事件或handler
+                                                                                                                                                                                     * @param {object} ref 
+                                                                                                                                                                                     * @param {string} EventName 
+                                                                                                                                                                                     * @param {Function?} handler 
+                                                                                                                                                                                     * @return {Number} //返回当前handler的Flow位置
+                                                                                                                                                                                     */
+function addEvent(ref, EventName, handler) {
+  ref = ref.ref ? ref : ref.$el;
+  var Flow = EventName + "HandlerFlow";
+  var P = EventName + "Proxy";
+  var event = ref.event[EventName];
+
+  if (!Array.isArray(ref[Flow])) ref[Flow] = [];
+  if (handler instanceof Function) ref[Flow].push(handler);
+
+  function foo() {
+    ref[Flow].forEach(function (f) {return f();});
+  }
+
+  if (!event) {
+    ref.addEvent(EventName);
+    event = ref.event[EventName];
+    event.handler = foo;
+    ref[P] = true;
+  } else if (!ref[P]) {
+    ref.event[EventName] = new Proxy(ref.event[EventName], {
+      get: function get(o, k) {
+        if (k == 'handler') foo();
+        return o[k];
+      },
+      set: function set(o, k, v) {
+        o[k] = v;
+      } });
+
+    ref[P] = true;
+  }
+  return ref[Flow].length - 1;
+}
+
+/** 小程序胶囊位置*/
+function MP_Menu() {
+
+  var u = uni.getMenuButtonBoundingClientRect();
+  return this.mp_menu ? "height: ".concat(u.top > u.height ? u.top : u.height, "px;") : '';
+
+
+
+
+}
+/**
+   * 元素边框信息查询;
+   * Query.cell;
+   * @param {className & refName} e 
+   */
+function Query(e) {var _this = this;
+  return new Promise(function (resolve, reject) {
+
+    uni.createSelectorQuery().in(_this).select('.' + e).
+    boundingClientRect(function (data) {
+      resolve(data);
+    }).
+    exec();
+
+
+
+
+
+
+  });
+}
+
+/**
+   * QueryAll.cell;
+   * app查询所有ref直接子节点为"参数一"的边框信息;
+   * 其他端查询所有为"参数一"的边框信息;
+   * @param {className} name 
+   * @param {refObj} ref 
+   */
+function QueryAll(name, ref) {var _this2 = this;
+  return new Promise(function (resolve, reject) {
+
+    uni.
+    createSelectorQuery().
+    in(_this2).
+    selectAll('.' + name).
+    boundingClientRect(function (data) {
+      resolve(data);
+    }).
+    exec();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  });
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 

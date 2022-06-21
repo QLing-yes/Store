@@ -1,18 +1,21 @@
 <template>
 	<navigation class="navigation">
 		<template v-slot:left>
-			<Q-icon n="9" class="tab">
-			<text class="icon tab">&#xe607;</text>
-			</Q-icon>
+			<drag-mask :icon="'\ue607'" n="11"></drag-mask>
 			<!-- #ifdef MP -->
-			<Q-icon n="9" class="tab"><text class="icon">&#xe608;</text></Q-icon>
+			<view class="tab">
+				<text class="icon">&#xe608;</text>
+				<Q-dragView pclass="drag">
+					<text class="mark">99+</text>
+				</Q-dragView>
+			</view>
 			<!-- #endif -->
 		</template>
 		<text class="title">Home</text>
 		<template v-slot:right>
 			<!-- #ifndef MP -->
-			<Q-icon n="9" class="tab"><text class="icon">&#xe608;</text></Q-icon>
-			<Q-icon n="99+" class="tab"><text class="icon" @click="nav()">&#xe609;</text></Q-icon>
+			<drag-mask :icon="'\ue608'" n="9"></drag-mask>
+			<drag-mask :icon="'\ue609'" n="99+" @click="nav()"></drag-mask>
 			<!-- #endif -->
 		</template>
 	</navigation>
@@ -25,8 +28,7 @@ export default {
 	},
 	onLoad() {},
 	onReady() {},
-	mounted() {
-	},
+	mounted() {},
 	methods: {
 		nav() {
 			uni.navigateTo({
@@ -52,10 +54,27 @@ export default {
 .tab {
 	@include tab;
 	background-color: #ffffff;
-	//#ifdef MP
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	//#endif
+	position: relative;
+	.drag {
+		position: absolute;
+		top: 0rpx;
+		right: 0rpx;
+	}
+	.mark {
+		// width: 50rpx;
+		height: 30rpx;
+		padding-left: 10rpx;
+		padding-right: 10rpx;
+		font-size: 25rpx;
+		font-weight: 500;
+		color: #ffffff;
+		background-color: #eb5a80;
+		border-radius: 20rpx;
+		text-align: center;
+		line-height: 30rpx;
+	}
 }
 </style>

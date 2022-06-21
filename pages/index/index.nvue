@@ -32,7 +32,7 @@ export default {
 	mixins: [],
 	data() {
 		return {
-			current: 2,
+			current: 0,
 			isNav: {
 				2: '#fff',
 				4: '#fff'

@@ -82,8 +82,11 @@ try {
     navigation: function() {
       return __webpack_require__.e(/*! import() | components/navigation/navigation */ "components/navigation/navigation").then(__webpack_require__.bind(null, /*! @/components/navigation/navigation.vue */ 112))
     },
-    QIcon: function() {
-      return __webpack_require__.e(/*! import() | Q-UI/Q-icon/Q-icon */ "Q-UI/Q-icon/Q-icon").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-icon/Q-icon.vue */ 119))
+    dragMask: function() {
+      return __webpack_require__.e(/*! import() | components/drag-mask/drag-mask */ "components/drag-mask/drag-mask").then(__webpack_require__.bind(null, /*! @/components/drag-mask/drag-mask.vue */ 206))
+    },
+    QDragView: function() {
+      return __webpack_require__.e(/*! import() | Q-UI/Q-dragView/Q-dragView */ "Q-UI/Q-dragView/Q-dragView").then(__webpack_require__.bind(null, /*! @/Q-UI/Q-dragView/Q-dragView.vue */ 177))
     }
   }
 } catch (e) {
@@ -158,6 +161,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -165,6 +173,7 @@ var _default =
   },
   onLoad: function onLoad() {},
   onReady: function onReady() {},
+  mounted: function mounted() {},
   methods: {
     nav: function nav() {
       uni.navigateTo({
